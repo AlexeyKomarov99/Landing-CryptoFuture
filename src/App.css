@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  user-select: none;
+  border: 0;
+}
+
+/* place for fonts */
+
+:root {
+  /* colors */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-purple: rgba(167, 19, 242, 1);
+  --color-blue: rgba(0, 178, 255, 1);
+
+  /* border */
+  --border-light-gray: 1px solid rgba(119, 119, 119, 1);
+  --border-dark-gray: 1px solid rgba(1, 1, 46, 0.5);
+
+  /* 6.7px */
+  --border-radius-small: 0.41875rem;
+  /* 14px */
+  --border-radius-medium: 0.875rem;
+  /* 22px */
+  --border-radius-hard: 1.375rem;
+
+  /* animations */
+  --transition: all 0.3s ease-out;
+}
+
+body {
+  /* 18px */
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: var(--color-white);
+  background-color: #000;
+  
+}
+
+h1 {
+  /* 55px */
+  font-size: 3.4375rem; 
+  font-weight: 700;
+  text-transform: uppercase;
+  /* line-height: 1.43; */
+  /* letter-spacing: -0.01em; */
+}
+
+h2 {
+  /* 40px */
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  /* line-height: 1.43; */
+  /* letter-spacing: -0.01em; */
+}
+
+h3 {
+  /* 22px */
+  font-size: 1.375rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  /* line-height: 1.43; */
+  /* letter-spacing: -0.01em; */
+}
+
+span {
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+}
+
+.span-bold {
+  font-weight: 700;
+}
+
+button {
+  color: var(--color-white);
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+  background: linear-gradient(to right, var(--color-purple), var(--color-blue));
+  border-radius: var(--border-radis-medium);
+  cursor: pointer;
+}

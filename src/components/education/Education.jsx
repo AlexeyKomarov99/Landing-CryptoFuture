@@ -1,0 +1,65 @@
+import React from 'react';
+//===== assets =====//
+import './Education.scss';
+import MoneyPhoto from '../../assets/photos/money/money-group.png';
+import {ReactComponent as CheckMarkIcon} from '../../assets/icons/education/check-mark.svg';
+//===== components =====//
+import ButtonCta from '../button-cta/ButtonCta';
+
+const eduContent = [
+  {id: 1, icon: <CheckMarkIcon />, descr: <span className='Education__descr'><span className='span-bold'>Не нужны знания</span> в инвестициях и криптовалюте, чтобы начать</span>},
+  {id: 2, icon: <CheckMarkIcon />, descr: <span className='Education__descr'><span className='span-bold'>Команда профессионалов</span> рассказывает <span className="span-bold">все секреты, берет “за ручку”</span> и доводит <span className="span-bold">до результата</span></span>},
+  {id: 3, icon: <CheckMarkIcon />, descr: <span className='Education__descr'><span className='span-bold'>Не нужны</span> большие стартовые <span className="span bold">вложения</span> (50-100$ на аккаунт)</span>},
+]
+
+const Education = () => {
+  return (
+    <section className="Education">
+      <div className="Education__wrapper">
+        <div className="Education__container">
+          <div className="Education__content">
+            <h2 className="Education__title">“CryptoFuture: ретродропы” <br/> — обучение, где:</h2>
+            <div className="Education__group">
+              {eduContent.map((item) => (
+                <article 
+                  key={item.id}
+                  className="Education__item"
+                >
+                  <div className="Education__icon-group">
+                    <img 
+                      src={item.icon} 
+                      alt="Check mark" 
+                      className="Education__icon" 
+                    />
+                  </div>
+                  {item.descr}
+                </article>
+              ))}
+            </div>
+            <div className="Education__content-inner">
+              <div className="Education__left">
+                <h3 className="Education__title-inner">Ретродропы — главный <br/> тренд 2024 года в крипте!</h3>
+                <span className="Education__descr-inner">
+                  Полностью безопасный и простой способ <br/> для приумножения вложений <span className="span-bold">в 8 раз за год!</span>
+                </span>
+                <ButtonCta />
+              </div>
+              <div className="Education__right">
+                <div className="Education__photo-wrapper">
+                  <img 
+                    src={MoneyPhoto} 
+                    alt="Money img" 
+                    className="Education__photo" 
+                  />
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default Education;

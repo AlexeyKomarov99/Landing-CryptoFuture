@@ -1,0 +1,95 @@
+@import '../../App.css';
+
+/* Адаптация для экранов выше 1920px */
+.Education {
+    position: relative;
+    background-image: url('../../assets//background/education.png');
+    background-size: cover;
+    .Education__wrapper {
+        width: 100%;
+        height: 100%;
+        max-width: 1600px;
+        margin: 0 auto;
+        .Education__container {
+            width: 100%;
+            height: 100%;
+            padding: 6.625rem 0 5rem;
+            .Education__content {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                .Education__title {
+                    width: 100%;
+                    margin-bottom: 3.375rem;
+                    text-align: center;
+                }
+                .Education__group {
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 3.75rem;
+                    // margin-bottom: 5.125rem;
+                    margin-bottom: 8.125rem;
+                    .Education__item {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        .Education__icon-wrapper {
+                            margin-bottom: 0.875rem;
+                            .Education__icon {
+
+                            }
+                        }
+                        .Education__descr {
+
+                        }
+                    }
+                }
+                .Education__content-inner {
+                    position: relative;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    border: rgba(64, 64, 64, 1);
+                    border-radius: var(--border-radius-medium);
+                    background: rgba(1, 1, 46, 0.5);
+                    padding: 2.5rem 2.125rem;
+                    .Education__left {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        .Education__title-inner {
+                            color: var(--color-blue);
+                            margin-bottom: 0.875rem;
+                        }
+                        .Education__descr-inner {
+                            margin-bottom: 2.25rem;
+                            .span-bold {
+                                color: var(--color-blue);
+                            }
+                        }
+                    }
+                    .Education__right {
+                        position: absolute;
+                        top: -100%;
+                        right: 15%;
+                        .Education__photo-wrapper {
+                            // 330px - 390px
+                            width: 20.625rem;
+                            height: 22.375rem;
+                            // border: 1px solid red;
+                            .Education__photo {
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
