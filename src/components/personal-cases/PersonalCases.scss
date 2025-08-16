@@ -1,0 +1,111 @@
+@import '../../App.css';
+.PersonalCases {
+    position: relative;
+    background-image: url('../../assets/background/personal-cases.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    z-index: 100;
+    height: 697px;
+    .PersonalCases__blur-top {
+        position: absolute;
+        width: 100%;
+        height: 170px;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        background: linear-gradient(180deg, rgba(1, 17, 101, 0) 0%, #011165 100%);
+        transform: matrix(1, 0, 0, -1, 0, 0);
+    }
+    .PersonalCases__wrapper {
+        width: 100%;
+        height: 100%;
+        max-width: 1600px;
+        margin: 0 auto;
+        .PersonalCases__container {
+            width: 100%;
+            height: 100%;
+            // 85px 0 162px
+            padding: 5.3125rem 0 10.125rem;
+            .PersonalCases__content {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                z-index: 20;
+                width: 100%;
+                .PersonalCases__title {
+                    text-align: center;
+                    margin-bottom: 2.125rem;
+                }
+                .PersonalCases__cases-group {
+                    display: grid;
+                    grid-template-columns: repeat(4,1fr);
+                    gap: 1rem;
+                    .PersonalCases__case-item {
+                        border: 1px solid rgba(100, 100, 100, 1);
+                        border-radius: var(--border-radius-small);
+                        background: var(--background-dark);
+                        overflow: hidden;
+                        &:nth-child(1) {
+                            transform: translateY(50px);
+                        }
+                        &:nth-child(4) {
+                            transform: translateY(50px);
+                        }
+                        .PersonalCases__header-icon {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background: linear-gradient(90deg, #6C089E 0%, #0B7DD0 100%);
+                        }
+                        .PersonalCases__list {
+                            padding: 1.375rem 1.25rem;
+                            background: rgba(1, 1, 46, 0.5);
+                            height: 100%;
+                            .PersonalCases__list-item {
+                                display: flex;
+                                align-items: flex-start;
+                                &:nth-child(n):not(:last-child) {
+                                    margin-bottom: 1.5rem;
+                                }
+                                .PersonalCases__list-item-icon-wrapper {
+                                    margin-right: 0.875rem;
+                                    .PersonalCases__list-item-icon {
+                                        
+                                    }
+                                }
+                                .PersonalCases__list-item-text {
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .PersonalCases__blur-bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 263px;
+        left: 0px;
+        bottom: 0px;
+        z-index: 10;
+        background: linear-gradient(to bottom, rgba(1, 17, 101, 0) 0%, #011165 100%);
+    }
+}
+.PersonalCases::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 10;
+}
+
+

@@ -46,11 +46,11 @@ const Education = () => {
               </div>
               <div className="Education__right">
                 <div className="Education__photo-wrapper">
-                  <img 
+                  {/* <img 
                     src={MoneyPhoto} 
                     alt="Money img" 
                     className="Education__photo" 
-                  />
+                  /> */}
                 </div>
               </div>
             </div>

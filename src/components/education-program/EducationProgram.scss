@@ -1,0 +1,84 @@
+@import '../../App.css';
+.EducationProgram {
+    position: relative;
+    background-image: url('../../assets/background/education.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    .EducationProgram__wrapper {
+        width: 100%;
+        height: 100%;
+        max-width: 1600px;
+        margin: 0 auto;
+        .EducationProgram__container {
+            width: 100%;
+            height: 100%;
+            padding: 3.375rem 0 4.375rem;
+            .EducationProgram__content {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .EducationProgram__title {
+                    margin-bottom: 1.5rem;
+                }
+                .EducationProgram__icon-arrow-wrapper {
+                    margin-bottom: 3.25rem;
+                    .EducationProgram__icon-arrow {
+
+                    }
+                }
+                .EducationProgram__program-group {
+                    width: 100%;
+                    display: flex;
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 2.5rem;
+                    .EducationProgram__program-item {
+                        width: 100%;
+                        padding: 1.5rem 2rem;
+                        background: var(--background-dark);
+                        border-radius: 27px;
+                        border: 1px solid rgba(64, 64, 64, 1);
+                        .EducationProgram__header {
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin-bottom: 1.5rem;
+                            .EducationProgram__module {
+
+                            }
+                            .EducationProgram__icon-wrapper {
+                                .EducationProgram__icon {
+
+                                }
+                            }
+                        }
+                        .EducationProgram__header-title {
+                            border-radius: var(--border-radius-hard);
+                            border: 1px solid rgba(255,255,255,0.5);
+                            padding: 0.4375rem 0;
+                            margin: 0 -1.5rem;
+                            padding: 0 1.5rem;
+                            margin-bottom: 1rem;
+                        }
+                        .EducationProgram__list {
+                            list-style-type: disc;
+                            margin-left: 1.2rem;
+                            .EducationProgram__list-item {
+                                width: 25rem;
+                                &:nth-child(n):not(:last-child) {
+                                    margin-bottom: 1rem;
+                                }
+                                &::marker {
+                                    color: var(--color-blue);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

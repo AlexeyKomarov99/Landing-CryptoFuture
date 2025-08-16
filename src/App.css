@@ -18,7 +18,9 @@
 
   /* border */
   --border-light-gray: 1px solid rgba(119, 119, 119, 1);
-  --border-dark-gray: 1px solid rgba(1, 1, 46, 0.5);
+  --border-dark-gray: 1px solid rgba(64, 64, 64, 1);
+
+  --background-dark: rgba(1, 1, 46, 0.5);
 
   /* 6.7px */
   --border-radius-small: 0.41875rem;
