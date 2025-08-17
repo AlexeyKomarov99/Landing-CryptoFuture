@@ -17,7 +17,7 @@ const educationData = [
 
 const Banner = () => {
   return (
-    <section className='Banner'>
+    <header className='Banner'>
       <div className="Banner__wrapper">
         <div className="Banner__container">
           <div className="Banner__content">
@@ -77,7 +77,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-    </section>
+    </header>
   )
 }
 

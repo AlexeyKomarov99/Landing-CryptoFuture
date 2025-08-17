@@ -8,9 +8,8 @@ import PersonalCases from './components/personal-cases/PersonalCases';
 import EducationProgram from './components/education-program/EducationProgram';
 import EducationSystem from './components/education-system/EducationSystem';
 import Darts from './components/darts/Darts';
-import EducationTarif from './components/education-tarif/EducationTarif';
+import EducationFee from './components/education-fee/EducationFee';
 import Questions from './components/questions/Questions';
-import QuestionsYet from './components/questions-yet/QuestionsYet';
 import Footer from './components/footer/Footer';
 
 const App = () => {
@@ -22,9 +21,8 @@ const App = () => {
       <EducationProgram />
       <EducationSystem />
       <Darts />
-      <EducationTarif />
+      <EducationFee />
       <Questions />
-      <QuestionsYet />
       <Footer />
     </main>
   )
