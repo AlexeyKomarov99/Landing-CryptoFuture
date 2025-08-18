@@ -1,7 +1,7 @@
 import React from 'react';
 //===== assets =====//
 import './PersonalCases.scss';
-import { dataCases } from './dataCases';
+import { data } from './data';
 
 const PersonalCases = () => {
   return (
@@ -12,7 +12,7 @@ const PersonalCases = () => {
           <div className="PersonalCases__content">
             <h2 className="PersonalCases__title">Личные кейсы Лили <br/> в ретродропах</h2>
             <div className="PersonalCases__cases-group">
-                {dataCases.map((item) => (
+                {data.map((item) => (
                   <article className="PersonalCases__case-item">
                     <div className="PersonalCases__header-icon">
                       {item.icon}

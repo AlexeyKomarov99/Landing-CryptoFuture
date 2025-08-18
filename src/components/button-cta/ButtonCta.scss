@@ -3,6 +3,9 @@
     display: flex;
     gap: 0.75rem;
     border-radius: var(--border-radius-hard);
+    cursor: pointer;
+    box-shadow: 4px 4px 11px 0px rgba(255, 255, 255, 0.35) inset;
+    box-shadow: -4px -4px 5px 0px rgba(50, 4, 73, 1) inset;
     .ButtonCta__icon-wrapper {
 
     }

@@ -3,16 +3,15 @@ import React from 'react';
 import './Banner.scss';
 import MainLabel from '../../assets/icons/banner/main-label.svg';
 import MainPhoto from '../../assets/photos/banner/main-photo.png';
-
-// Для теста иконок
-import {ReactComponent as TestIcon} from '../../assets/icons/personal-cases/graph.svg';
+import {ReactComponent as CalendarIcon} from '../../assets/icons/banner/calendar.svg';
+import {ReactComponent as WatchIcon} from '../../assets/icons/banner/watch.svg';
 
 //===== components =====//
 import ButtonCta from '../button-cta/ButtonCta';
 
 const educationData = [
-  {id: 1, icon: <TestIcon />, title: 'Старт потока', descr: '1 июня'},
-  {id: 2, icon: <TestIcon />, title: 'Старт потока', descr: '1,5 месяца'}
+  {id: 1, icon: <CalendarIcon />, title: 'Старт потока', descr: '1 июня'},
+  {id: 2, icon: <WatchIcon />, title: 'Длительность обучения', descr: '1,5 месяца'}
 ]
 
 const Banner = () => {
@@ -45,11 +44,7 @@ const Banner = () => {
                       className="Banner__education-item"
                     >
                       <div className="Banner__icon-wrapper">
-                        <img 
-                          src={item.icon} 
-                          alt="Icon" 
-                          className="Banner__icon" 
-                        />
+                        {item.icon}
                       </div>
                       <div className="Banner__text-group">
                         <span className="Banner__title">{item.title}: </span>
@@ -60,7 +55,7 @@ const Banner = () => {
                 </div>
                 <h1 className="Banner__title">CryptoFuture: <br/> ретродропы</h1>
                 <h3 className="Banner__title-descr">Преумножь вложения в 8 раз за год, <br/> выполняя простые действия</h3>
-                <ButtonCta />
+                <ButtonCta className='btn' />
               </div>
               
               <div className="Banner__content-right">
@@ -77,6 +72,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
+      <div className="Banner__blur-bottom"></div>
     </header>
   )
 }

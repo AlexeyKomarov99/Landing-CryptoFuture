@@ -1,20 +1,23 @@
 import React from 'react';
 //===== assets =====//
 import './Education.scss';
-import MoneyPhoto from '../../assets/photos/money/money-group.png';
 import {ReactComponent as CheckMarkIcon} from '../../assets/icons/education/check-mark.svg';
+import MoneyOne from '../../assets/photos/money/money-one.png';
+import MoneyTwo from '../../assets/photos/money/money-two.png';
+import MoneyThree from '../../assets/photos/money/money-three.png';
 //===== components =====//
 import ButtonCta from '../button-cta/ButtonCta';
 
 const eduContent = [
-  {id: 1, icon: <CheckMarkIcon />, descr: <span className='Education__descr'><span className='span-bold'>Не нужны знания</span> в инвестициях и криптовалюте, чтобы начать</span>},
-  {id: 2, icon: <CheckMarkIcon />, descr: <span className='Education__descr'><span className='span-bold'>Команда профессионалов</span> рассказывает <span className="span-bold">все секреты, берет “за ручку”</span> и доводит <span className="span-bold">до результата</span></span>},
-  {id: 3, icon: <CheckMarkIcon />, descr: <span className='Education__descr'><span className='span-bold'>Не нужны</span> большие стартовые <span className="span bold">вложения</span> (50-100$ на аккаунт)</span>},
+  {id: 1, icon: <CheckMarkIcon className="Education__icon" />, descr: <span className='Education__descr'><span className='span-bold'>Не нужны знания</span> в инвестициях и криптовалюте, чтобы начать</span>},
+  {id: 2, icon: <CheckMarkIcon className="Education__icon" />, descr: <span className='Education__descr'><span className='span-bold'>Команда профессионалов</span> рассказывает <span className="span-bold">все секреты, берет “за ручку”</span> и доводит <span className="span-bold">до результата</span></span>},
+  {id: 3, icon: <CheckMarkIcon className="Education__icon" />, descr: <span className='Education__descr'><span className='span-bold'>Не нужны</span> большие стартовые <span className="span bold">вложения</span> (50-100$ на аккаунт)</span>},
 ]
 
 const Education = () => {
   return (
     <section className="Education">
+      <div className="Education__blur-top"></div>
       <div className="Education__wrapper">
         <div className="Education__container">
           <div className="Education__content">
@@ -25,12 +28,8 @@ const Education = () => {
                   key={item.id}
                   className="Education__item"
                 >
-                  <div className="Education__icon-group">
-                    <img 
-                      src={item.icon} 
-                      alt="Check mark" 
-                      className="Education__icon" 
-                    />
+                  <div className="Education__icon-wrapper">
+                    {item.icon}
                   </div>
                   {item.descr}
                 </article>
@@ -46,11 +45,7 @@ const Education = () => {
               </div>
               <div className="Education__right">
                 <div className="Education__photo-wrapper">
-                  {/* <img 
-                    src={MoneyPhoto} 
-                    alt="Money img" 
-                    className="Education__photo" 
-                  /> */}
+                  
                 </div>
               </div>
             </div>
@@ -58,6 +53,7 @@ const Education = () => {
           </div>
         </div>
       </div>
+      <div className="Education__blur-bottom"></div>
     </section>
   )
 }

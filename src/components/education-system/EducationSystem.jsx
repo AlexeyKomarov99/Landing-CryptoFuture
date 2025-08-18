@@ -8,6 +8,7 @@ import ButtonCta from '../button-cta/ButtonCta';
 const EducationSystem = () => {
   return (
     <div className='EducationSystem'>
+      <div className="EducationSystem__blur-top"></div>
       <div className="EducationSystem__wrapper">
         <div className="EducationSystem__container">
           <div className="EducationSystem__content">
@@ -93,6 +94,7 @@ const EducationSystem = () => {
           </div>
         </div>
       </div>
+      <div className="EducationSystem__blur-bottom"></div>
     </div>
   )
 }

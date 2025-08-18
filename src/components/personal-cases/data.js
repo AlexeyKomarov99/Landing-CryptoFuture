@@ -6,7 +6,7 @@ import { ReactComponent as GraphIcon } from '../../assets/icons/personal-cases/g
 import { ReactComponent as ArrowDownIcon } from '../../assets/icons/personal-cases/arrow-down.svg';
 import { ReactComponent as BagMoneyIcon } from '../../assets/icons/personal-cases/bag-money.svg';
 
-export const dataCases = [
+export const data = [
   {
     id: 1, 
     icon: <StarknetIcon />, 

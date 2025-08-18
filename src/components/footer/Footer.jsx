@@ -7,6 +7,7 @@ import Label from '../../assets/icons/banner/main-label.svg';
 const Footer = () => {
   return (
     <section className='Footer'>
+      <div className="Footer__blur-top"></div>
       <div className="Footer__wrapper">
         <div className="Footer__container">
           <div className="Footer__content">
@@ -41,6 +42,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div className="Footer__blur-top"></div>
     </section>
   )
 }

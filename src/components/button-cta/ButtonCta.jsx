@@ -9,11 +9,7 @@ const ButtonCta = () => {
   return (
     <button className="ButtonCta">
       <div className="ButtonCta__icon-wrapper">
-        <img 
-          src={<TestIcon />} 
-          alt="Hand" 
-          className="Banner__icon-cta" 
-        />
+        <TestIcon className='ButtonCta' />
       </div>
       <span className="Banner__cta-text">Хочу принять участие!</span>
     </button>

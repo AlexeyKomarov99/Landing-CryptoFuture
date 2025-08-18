@@ -1,12 +1,13 @@
 import React from 'react';
 //===== assets =====//
 import './EducationProgram.scss';
-import { programList } from './programList';
+import { data } from './data';
 import {ReactComponent as ArrowRightIcon} from '../../assets/icons/education-program/arrow-right.svg';
 
 const EducationProgram = () => {
   return (
     <section className="EducationProgram">
+      <div className="EducationProgram__blur-top"></div>
       <div className="EducationProgram__wrapper">
         <div className="EducationProgram__container">
           <div className="EducationProgram__content">
@@ -15,7 +16,7 @@ const EducationProgram = () => {
               <ArrowRightIcon className='EducationProgramm__icon-arrow' />
             </div>
             <div className="EducationProgram__program-group">
-              {programList.map((program) => (
+              {data.map((program) => (
                 <article
                   key={program.id} 
                   className="EducationProgram__program-item"
@@ -43,6 +44,7 @@ const EducationProgram = () => {
           </div>
         </div>
       </div>
+      <div className="EducationProgram__blur-bottom"></div>
     </section>
   )
 }

@@ -1,7 +1,7 @@
 import {ReactComponent as FlagIcon} from '../../assets/icons/education-program/flag.svg';
 import {ReactComponent as BookIcon} from '../../assets/icons/education-program/book.svg';
 
-export const programList = [
+export const data = [
     {
         id: 1,
         module: 'Модуль 1',

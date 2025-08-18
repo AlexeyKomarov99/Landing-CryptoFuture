@@ -16,6 +16,7 @@ const Questions = () => {
 
   return (
     <section className='Questions'>
+      <div className="Questions__blur-top"></div>
       <div className="Questions__wrapper">
         <div className="Questions__container">
           <div className="Questions__content">
@@ -52,6 +53,7 @@ const Questions = () => {
           </div>
         </div>
       </div>
+      <div className="Questions__blur-bottom"></div>
     </section>
   )
 }

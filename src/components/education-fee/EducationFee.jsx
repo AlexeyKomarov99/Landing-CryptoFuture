@@ -6,6 +6,7 @@ import { data } from './data';
 const EducationFee = () => {
   return (
     <section className='EducationFee'>
+      <div className="EducationFee__blur-top"></div>
       <div className="EducationFee__wrapper">
         <div className="EducationFee__container">
           <div className="EducationFee__content">
@@ -53,6 +54,7 @@ const EducationFee = () => {
           </div>
         </div>
       </div>
+      <div className="EducationFee__blur-bottom"></div>
     </section>
   )
 }
