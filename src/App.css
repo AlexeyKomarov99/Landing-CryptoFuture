@@ -61,6 +61,12 @@ body {
   color: var(--color-white);
   background-color: #000;
   
+  -ms-overflow-style: none;  /* IE и Edge */
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari, Opera, Yandex */
 }
 
 h1 {
