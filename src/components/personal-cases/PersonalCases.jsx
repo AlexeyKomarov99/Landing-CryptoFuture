@@ -13,7 +13,10 @@ const PersonalCases = () => {
             <h2 className="PersonalCases__title">Личные кейсы Лили <br/> в ретродропах</h2>
             <div className="PersonalCases__cases-group">
                 {data.map((item) => (
-                  <article className="PersonalCases__case-item">
+                  <article 
+                    key={item.id}
+                    className="PersonalCases__case-item"
+                  >
                     <div className="PersonalCases__header-icon">
                       {item.icon}
                     </div>

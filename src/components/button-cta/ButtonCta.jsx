@@ -1,15 +1,15 @@
 import React from 'react';
 //===== assets =====//
 import './ButtonCta.scss';
-
-// Для теста иконок
-import {ReactComponent as TestIcon} from '../../assets/icons/personal-cases/graph.svg';
+import { LiaHandPointRight as HandIcon } from "react-icons/lia";
 
 const ButtonCta = () => {
   return (
     <button className="ButtonCta">
       <div className="ButtonCta__icon-wrapper">
-        <TestIcon className='ButtonCta' />
+        <HandIcon 
+          className='ButtonCta__icon'
+        />
       </div>
       <span className="Banner__cta-text">Хочу принять участие!</span>
     </button>

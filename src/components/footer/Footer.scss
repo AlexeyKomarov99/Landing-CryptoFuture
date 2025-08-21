@@ -85,11 +85,8 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    .Footer__label-group {
-                        margin-bottom: 2.875rem;
-                        .Footer__label-icon {
-
-                        }
+                    .Footer__label-wrapper {
+                        margin-bottom: 3rem;
                     }
                     .Footer__privacy-policy {
                         margin-bottom: 0.875rem;
@@ -126,57 +123,27 @@
 /* Адаптация для экранов от 1440px до 1920px */
 @media (max-width: 1920px) {
     .Footer {
-        .Footer__blur-top {
-            
-        }
         .Footer__wrapper {
             width: 90%;
             .Footer__container {
                 padding: 4rem 4.125rem;
                 .Footer__content {
-
-                    .Footer__title {
-
-                    }
                     .Footer__btn-support {
                         margin-bottom: 4.5rem;
                     }
                     .Footer__content-body {
                         margin-bottom: 3rem;
-                        .Footer__title-two {
-
-                        }
-                        .Footer__photo-wrapper {
-                            .Footer__photo {
-
-                            }
-                        }
-                        .Footer__girl-name {
-
-                        }
-                        .Footer__phone {
-
-                        }
                     }
                     .Footer__content-bottom {
                         .Footer__label-group {
                             margin-bottom: 2rem;
-                            .Footer__label-icon {
-    
-                            }
                         }
                         .Footer__privacy-policy {
                             margin-bottom: 0.5rem;
                         }
-                        .Footer__offer-agreement {
-    
-                        }
                     }
                 }
             }
-        }
-        .Footer__blur-bottom {
-
         }
     }
 }
@@ -184,17 +151,11 @@
 /* Адаптация для экранов от 1366px до 1440px */
 @media (max-width: 1440px) {
     .Footer {
-        .Footer__blur-top {
-        }
         .Footer__wrapper {
             width: 90%;
             .Footer__container {
                 padding: 4rem 4.125rem;
                 .Footer__content {
-                    
-                    .Footer__title {
-
-                    }
                     .Footer__btn-support {
                         margin-bottom: 3.5rem;
                     }
@@ -205,36 +166,18 @@
                         }
                         .Footer__photo-wrapper {
                             margin-bottom: 1.25rem;
-                            .Footer__photo {
-
-                            }
-                        }
-                        .Footer__girl-name {
-
-                        }
-                        .Footer__phone {
-
                         }
                     }
                     .Footer__content-bottom {
                         .Footer__label-group {
                             margin-bottom: 2rem;
-                            .Footer__label-icon {
-    
-                            }
                         }
                         .Footer__privacy-policy {
                             margin-bottom: 0.5rem;
                         }
-                        .Footer__offer-agreement {
-    
-                        }
                     }
                 }
             }
-        }
-        .Footer__blur-bottom {
-
         }
     }
 }
@@ -242,18 +185,11 @@
 /* Адаптация для экранов от 1280px до 1366px */
 @media (max-width: 1366px) {
     .Footer {
-        .Footer__blur-top {
-            
-        }
         .Footer__wrapper {
             width: 90%;
             .Footer__container {
                 padding: 3.5rem 3.25rem;
                 .Footer__content {
-                    
-                    .Footer__title {
-
-                    }
                     .Footer__btn-support {
                         margin-bottom: 3.5rem;
                     }
@@ -264,36 +200,21 @@
                         }
                         .Footer__photo-wrapper {
                             margin-bottom: 1rem;
-                            .Footer__photo {
-
-                            }
                         }
                         .Footer__girl-name {
                             margin-bottom: 0.25rem;
-                        }
-                        .Footer__phone {
-
                         }
                     }
                     .Footer__content-bottom {
                         .Footer__label-group {
                             margin-bottom: 2rem;
-                            .Footer__label-icon {
-    
-                            }
                         }
                         .Footer__privacy-policy {
                             margin-bottom: 0.5rem;
                         }
-                        .Footer__offer-agreement {
-    
-                        }
                     }
                 }
             }
-        }
-        .Footer__blur-bottom {
-
         }
     }
 }
@@ -301,8 +222,6 @@
 /* Адаптация для экранов от 1024px до 1280px */
 @media (max-width: 1280px) {
     .Footer {
-        .Footer__blur-top {
-        }
         .Footer__wrapper {
             width: 95%;
             .Footer__container {
@@ -322,36 +241,21 @@
                         }
                         .Footer__photo-wrapper {
                             margin-bottom: 1rem;
-                            .Footer__photo {
-
-                            }
                         }
                         .Footer__girl-name {
                             margin-bottom: 0.25rem;
-                        }
-                        .Footer__phone {
-
                         }
                     }
                     .Footer__content-bottom {
                         .Footer__label-group {
                             margin-bottom: 2rem;
-                            .Footer__label-icon {
-    
-                            }
                         }
                         .Footer__privacy-policy {
                             margin-bottom: 0.5rem;
                         }
-                        .Footer__offer-agreement {
-    
-                        }
                     }
                 }
             }
-        }
-        .Footer__blur-bottom {
-
         }
     }
 }
@@ -360,8 +264,6 @@
 /* Адаптация для экранов от 768px до 1024px */
 @media (max-width: 1024px) {
     .Footer {
-        .Footer__blur-top {
-        }
         .Footer__wrapper {
             width: 100%;
             padding: 0 1rem;
@@ -390,29 +292,17 @@
                         .Footer__girl-name {
                             margin-bottom: 0.25rem;
                         }
-                        .Footer__phone {
-
-                        }
                     }
                     .Footer__content-bottom {
                         .Footer__label-group {
                             margin-bottom: 1rem;
-                            .Footer__label-icon {
-    
-                            }
                         }
                         .Footer__privacy-policy {
                             margin-bottom: 0.5rem;
                         }
-                        .Footer__offer-agreement {
-    
-                        }
                     }
                 }
             }
-        }
-        .Footer__blur-bottom {
-
         }
     }
 }
@@ -420,8 +310,6 @@
 /* Адаптация для экранов от 576px до 768px */
 @media (max-width: 768px) {
     .Footer {
-        .Footer__blur-top {
-        }
         .Footer__wrapper {
             width: 100%;
             padding: 0 1rem;
@@ -450,29 +338,17 @@
                         .Footer__girl-name {
                             margin-bottom: 0.25rem;
                         }
-                        .Footer__phone {
-
-                        }
                     }
                     .Footer__content-bottom {
                         .Footer__label-group {
                             margin-bottom: 1rem;
-                            .Footer__label-icon {
-    
-                            }
                         }
                         .Footer__privacy-policy {
                             margin-bottom: 0.5rem;
                         }
-                        .Footer__offer-agreement {
-    
-                        }
                     }
                 }
             }
-        }
-        .Footer__blur-bottom {
-
         }
     }
 }
@@ -480,8 +356,6 @@
 /* Адаптация для экранов от 320px до 576px */
 @media (max-width: 576px) {
     .Footer {
-        .Footer__blur-top {
-        }
         .Footer__wrapper {
             width: 100%;
             padding: 0 1rem;
@@ -510,29 +384,17 @@
                         .Footer__girl-name {
                             margin-bottom: 0.25rem;
                         }
-                        .Footer__phone {
-
-                        }
                     }
                     .Footer__content-bottom {
                         .Footer__label-group {
                             margin-bottom: 1rem;
-                            .Footer__label-icon {
-    
-                            }
                         }
                         .Footer__privacy-policy {
                             margin-bottom: 0.5rem;
                         }
-                        .Footer__offer-agreement {
-    
-                        }
                     }
                 }
             }
-        }
-        .Footer__blur-bottom {
-
         }
     }
 }

@@ -51,7 +51,7 @@
 /* Адаптация для экранов выше 1920px */
 
 html {
-
+  scroll-behavior: smooth;
 }
 
 body {

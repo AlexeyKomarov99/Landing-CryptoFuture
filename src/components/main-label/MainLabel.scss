@@ -1,0 +1,140 @@
+@import '../../App.css';
+
+/* Адаптация для экранов выше 1920px */
+.MainLabel {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.625rem;
+    .MainLabel__label-photo-wrapper {
+        .MainLabel__label-photo {
+            // 50x50
+            width: 3.125rem;
+            height: 3.125rem;
+        }
+    }
+    .MainLabel__name-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0.25rem;
+        .MainLabel__first-name {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            height: 100%;
+            width: 100%;
+            .MainLabel__symbol-item-wrapper {
+                .MainLabel__symbol-item {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+        .MainLabel__second-name {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            .MainLabel__symbol-item-wrapper {
+                .MainLabel__symbol-item {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+/* Адаптация для экранов от 1440px до 1920px */
+@media (max-width: 1920px) {
+}
+
+/* Адаптация для экранов от 1366px до 1440px */
+@media (max-width: 1440px) {
+}
+
+//===== tablet =====//
+/* Адаптация для экранов от 1280px до 1366px */
+@media (max-width: 1366px) {
+    .MainLabel {
+        gap: 0.25rem;
+        .MainLabel__label-photo-wrapper {
+            .MainLabel__label-photo {
+                // 42x42
+                width: 2.625rem;
+                height: 2.625rem;
+            }
+        }
+        .MainLabel__name-content {
+            gap: 0.125rem;
+            .MainLabel__first-name {
+                .MainLabel__symbol-item-wrapper {
+                    .MainLabel__symbol-item {
+                        width: 1.25rem;
+                        height: 1.25rem;
+                    }
+                }
+            }
+            .MainLabel__second-name {
+                .MainLabel__symbol-item-wrapper {
+                    .MainLabel__symbol-item {
+                        width: 1.25rem;
+                        height: 1.25rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Адаптация для экранов от 1024px до 1280px */
+@media (max-width: 1280px) {
+}
+
+//===== mobile =====//
+/* Адаптация для экранов от 768px до 1024px */
+@media (max-width: 1024px) {
+}
+
+/* Адаптация для экранов от 576px до 768px */
+@media (max-width: 768px) {
+    .MainLabel {
+        gap: 0.25rem;
+        .MainLabel__label-photo-wrapper {
+            .MainLabel__label-photo {
+                // 34x43
+                width: 2.125rem;
+                height: 2.125rem;
+            }
+        }
+        .MainLabel__name-content {
+            gap: 0.125rem;
+            .MainLabel__first-name {
+                .MainLabel__symbol-item-wrapper {
+                    .MainLabel__symbol-item {
+                        width: 1rem;
+                        height: 1rem;
+                    }
+                }
+            }
+            .MainLabel__second-name {
+                .MainLabel__symbol-item-wrapper {
+                    .MainLabel__symbol-item {
+                        width: 1rem;
+                        height: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Адаптация для экранов от 320px до 576px */
+@media (max-width: 576px) {
+}

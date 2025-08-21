@@ -2,7 +2,7 @@ import React from 'react';
 //===== assets =====//
 import './Footer.scss';
 import GirlPhoto from '../../assets/photos/footer/girl.png';
-import Label from '../../assets/icons/banner/main-label.svg';
+import MainLabel from '../main-label/MainLabel';
 
 const Footer = () => {
   return (
@@ -28,12 +28,8 @@ const Footer = () => {
             </div>
 
             <div className="Footer__content-bottom">
-              <div className="Footer__label-group">
-                  <img
-                    src={Label}
-                    alt='Label main'
-                    className="Footer__label-icon"
-                  />
+              <div className="Footer__label-wrapper">
+                <MainLabel />
               </div>
               <span className="Footer__privacy-policy">Политика конфиденциальности</span>
               <span className="Footer__offer-agreement">Договор оферты</span>

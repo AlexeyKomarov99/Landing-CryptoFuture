@@ -1,13 +1,13 @@
 import React from 'react';
 //===== assets =====//
 import './Banner.scss';
-import MainLabel from '../../assets/icons/banner/main-label.svg';
 import MainPhoto from '../../assets/photos/banner/main-photo.png';
 import {ReactComponent as CalendarIcon} from '../../assets/icons/banner/calendar.svg';
 import {ReactComponent as WatchIcon} from '../../assets/icons/banner/watch.svg';
 
 //===== components =====//
 import ButtonCta from '../button-cta/ButtonCta';
+import MainLabel from '../main-label/MainLabel';
 
 const educationData = [
   {id: 1, icon: <CalendarIcon />, title: 'Старт потока', descr: '1 июня'},
@@ -21,17 +21,8 @@ const Banner = () => {
         <div className="Banner__container">
           <div className="Banner__content">
 
-            <div className="Banner__label">
-              <div className="Banner__main-icon-wrapper">
-                <img 
-                  src={MainLabel} 
-                  alt="Main label"
-                  className="Banner__main-icon" 
-                />
-              </div>
-              <span className="Banner__label-name">
-                crypto <br/> future
-              </span>
+            <div className="Banner__label-wrapper">
+              <MainLabel />
             </div>
 
             <div className="Banner__content-inner">

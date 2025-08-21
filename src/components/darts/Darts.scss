@@ -91,23 +91,9 @@
                         .Darts__title {
                             margin-bottom: 1.5rem;
                         }
-                        .Darts__descr {
-    
-                        }
-                        .text-blur {
-    
-                        }
-                    }
-                    .Darts__right {
-                        .Darts__photo-wrapper {
-                            .Darts__photo {
-                            }
-                        }
                     }
                 }
             }
-        }
-        .Darts__blur-bottom {
         }
     }
 }
@@ -115,8 +101,6 @@
 /* Адаптация для экранов от 1366px до 1440px */
 @media (max-width: 1440px) {
     .Darts {
-        .Darts__blur-top {
-        }
         .Darts__wrapper {
             width: 90%;
             .Darts__container {
@@ -125,18 +109,6 @@
                     .Darts__left {
                         .Darts__title {
                             margin-bottom: 1.5rem;
-                        }
-                        .Darts__descr {
-    
-                        }
-                        .text-blur {
-    
-                        }
-                    }
-                    .Darts__right {
-                        .Darts__photo-wrapper {
-                            .Darts__photo {
-                            }
                         }
                     }
                 }
@@ -164,18 +136,6 @@
                         .Darts__title {
                             margin-bottom: 1.5rem;
                         }
-                        .Darts__descr {
-    
-                        }
-                        .text-blur {
-    
-                        }
-                    }
-                    .Darts__right {
-                        .Darts__photo-wrapper {
-                            .Darts__photo {
-                            }
-                        }
                     }
                 }
             }
@@ -189,8 +149,6 @@
 /* Адаптация для экранов от 1024px до 1280px */
 @media (max-width: 1280px) {
     .Darts {
-        .Darts__blur-top {
-        }
         .Darts__wrapper {
             width: 95%;
             .Darts__container {
@@ -199,12 +157,6 @@
                     .Darts__left {
                         .Darts__title {
                             margin-bottom: 1.5rem;
-                        }
-                        .Darts__descr {
-    
-                        }
-                        .text-blur {
-    
                         }
                     }
                     .Darts__right {
@@ -220,7 +172,6 @@
         }
         .Darts__blur-bottom {
             height: 120px;
-            // border: 1px solid red;
         }
     }
 }
@@ -244,12 +195,6 @@
                     .Darts__left {
                         .Darts__title {
                             margin-bottom: 1.5rem;
-                        }
-                        .Darts__descr {
-    
-                        }
-                        .text-blur {
-    
                         }
                     }
                     .Darts__right {
@@ -289,10 +234,6 @@
                     .Darts__left {
                         .Darts__title {
                             margin-bottom: 1.25rem;
-                        }
-                        .Darts__descr {
-                        }
-                        .text-blur {
                         }
                     }
                     .Darts__right {
@@ -337,10 +278,6 @@
                     .Darts__left {
                         .Darts__title {
                             margin-bottom: 1.25rem;
-                        }
-                        .Darts__descr {
-                        }
-                        .text-blur {
                         }
                     }
                     .Darts__right {

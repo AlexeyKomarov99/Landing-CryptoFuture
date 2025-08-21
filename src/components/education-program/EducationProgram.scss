@@ -45,53 +45,73 @@
                 }
                 .EducationProgram__program-group {
                     width: 100%;
-                    display: grid;
-                    grid-template-columns: repeat(3, 1fr);
-                    gap: 2.5rem;
+                    cursor: pointer;
+
+                    .swiper-wrapper {
+                        display: flex;
+                        align-items: stretch;
+                    }
+
                     .EducationProgram__program-item {
-                        width: 100%;
+                        width: 700px;
+                        height: auto;
                         padding: 1.5rem 2rem;
                         background: var(--background-dark);
                         border-radius: 27px;
                         border: 1px solid rgba(64, 64, 64, 1);
-                        .EducationProgram__header {
-                            width: 100%;
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            margin-bottom: 1.5rem;
-                            .EducationProgram__module {
 
-                            }
-                            .EducationProgram__icon-wrapper {
-                                .EducationProgram__icon {
-
+                        .EducationProgram__program-content {
+                            .EducationProgram__header {
+                                width: 100%;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin-bottom: 1.5rem;
+                                .EducationProgram__module {
+    
+                                }
+                                .EducationProgram__icon-wrapper {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 2.5rem;
+                                    height: 2rem;
+                                    background: linear-gradient(90.88deg, rgba(192, 67, 255, 0.5) 0.25%, rgba(0, 178, 255, 0.5) 100%);
+                                    border-radius: var(--border-radius-small);
+                                    border: 1px solid #fff;
+                                    box-shadow: 7.2px 8.1px 17.1px 0px rgba(0, 0, 0, 0.7);
+                                    .EducationProgram__icon {
+                                        width: 1.5rem;
+                                        height: 1.5rem;
+                                    }
                                 }
                             }
-                        }
-                        .EducationProgram__header-title {
-                            border-radius: var(--border-radius-hard);
-                            border: 1px solid rgba(255,255,255,0.5);
-                            padding: 0.4375rem 0;
-                            margin: 0 -1.5rem;
-                            padding: 0 1.5rem;
-                            margin-bottom: 1rem;
-                        }
-                        .EducationProgram__list {
-                            width: 100%;
-                            display: flex;
-                            flex-direction: column;
-                            align-items: flex-start;
-                            justify-content: flex-start;
-                            list-style-type: disc;
-                            margin-left: 1.2rem;
-                            .EducationProgram__list-item {
-                                width: 25rem;
-                                &:nth-child(n):not(:last-child) {
-                                    margin-bottom: 1rem;
-                                }
-                                &::marker {
-                                    color: var(--color-blue);
+                            .EducationProgram__header-title {
+                                border-radius: var(--border-radius-hard);
+                                border: 1px solid rgba(255,255,255,0.5);
+                                padding: 0.4375rem 0;
+                                margin: 0 -1.5rem;
+                                padding: 0 1.5rem;
+                                margin-bottom: 1rem;
+                            }
+                            .EducationProgram__list {
+                                width: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                justify-content: flex-start;
+                                list-style-type: disc;
+                                margin-left: 1.2rem;
+                                .EducationProgram__list-item {
+                                    overflow-wrap: break-word;
+                                    word-wrap: break-word;
+                                    max-width: 100%;
+                                    &:nth-child(n):not(:last-child) {
+                                        margin-bottom: 1rem;
+                                    }
+                                    &::marker {
+                                        color: var(--color-blue);
+                                    }
                                 }
                             }
                         }
@@ -124,51 +144,28 @@
 @media(max-width: 1920px) {
     .EducationProgram {
         height: 570px;
-        .EducationProgram__blur-top {
-    
-        }
         .EducationProgram__wrapper {
             width: 90%;
             .EducationProgram__container {
                 padding: 2.5rem 0 4rem;
                 .EducationProgram__content {
-                    .EducationProgram__title {
-    
-                    }
                     .EducationProgram__icon-arrow-wrapper {
                         margin-bottom: 2rem;
-                        .EducationProgram__icon-arrow {
-    
-                        }
                     }
                     .EducationProgram__program-group {
                         gap: 2rem;
                         .EducationProgram__program-item {
-                            .EducationProgram__header {
-                                margin-bottom: 1.25rem;
-                                .EducationProgram__module {
-    
-                                }
-                                .EducationProgram__icon-wrapper {
-                                    .EducationProgram__icon {
-    
-                                    }
-                                }
-                            }
-                            .EducationProgram__header-title {
-                            }
-                            .EducationProgram__list {
-                                .EducationProgram__list-item {
-    
+                            width: 650px;
+                            .EducationProgram__program-content {
+
+                                .EducationProgram__header {
+                                    margin-bottom: 1.25rem;
                                 }
                             }
                         }
                     }
                 }
             }
-        }
-        .EducationProgram__blur-bottom {
-    
         }
     }
 }
@@ -177,43 +174,27 @@
 @media(max-width: 1440px) {
     .EducationProgram {
         height: 540px;
-        .EducationProgram__blur-top {
-    
-        }
         .EducationProgram__wrapper {
             width: 90%;
             .EducationProgram__container {
                 padding: 2rem 0 4rem;
                 .EducationProgram__content {
-                    .EducationProgram__title {
-    
-                    }
                     .EducationProgram__icon-arrow-wrapper {
                         margin-bottom: 2rem;
-                        .EducationProgram__icon-arrow {
-    
-                        }
                     }
                     .EducationProgram__program-group {
                         gap: 2rem;
                         .EducationProgram__program-item {
-                            .EducationProgram__header {
-                                margin-bottom: 1.25rem;
-                                .EducationProgram__module {
-    
+                            width: 600px;
+                            .EducationProgram__program-content {
+                                .EducationProgram__header {
+                                    margin-bottom: 1.25rem;
                                 }
-                                .EducationProgram__icon-wrapper {
-                                    .EducationProgram__icon {
-    
-                                    }
-                                }
-                            }
-                            .EducationProgram__header-title {
-                            }
-                            .EducationProgram__list {
-                                .EducationProgram__list-item {
-                                    &:nth-child(n):not(:last-child) {
-                                        margin-bottom: 0.5rem;
+                                .EducationProgram__list {
+                                    .EducationProgram__list-item {
+                                        &:nth-child(n):not(:last-child) {
+                                            margin-bottom: 0.5rem;
+                                        }
                                     }
                                 }
                             }
@@ -221,9 +202,6 @@
                     }
                 }
             }
-        }
-        .EducationProgram__blur-bottom {
-    
         }
     }
 }
@@ -233,43 +211,27 @@
 @media(max-width: 1366px) {
     .EducationProgram {
         height: 520px;
-        .EducationProgram__blur-top {
-    
-        }
         .EducationProgram__wrapper {
             width: 90%;
             .EducationProgram__container {
                 padding: 2.5rem 0 4rem;
                 .EducationProgram__content {
-                    .EducationProgram__title {
-    
-                    }
                     .EducationProgram__icon-arrow-wrapper {
                         margin-bottom: 2rem;
-                        .EducationProgram__icon-arrow {
-    
-                        }
                     }
                     .EducationProgram__program-group {
                         gap: 2rem;
                         .EducationProgram__program-item {
-                            .EducationProgram__header {
-                                margin-bottom: 1.25rem;
-                                .EducationProgram__module {
-    
+                            width: 550px;
+                            .EducationProgram__content {
+                                .EducationProgram__header {
+                                    margin-bottom: 1.25rem;
                                 }
-                                .EducationProgram__icon-wrapper {
-                                    .EducationProgram__icon {
-    
-                                    }
-                                }
-                            }
-                            .EducationProgram__header-title {
-                            }
-                            .EducationProgram__list {
-                                .EducationProgram__list-item {
-                                    &:nth-child(n):not(:last-child) {
-                                        margin-bottom: 0.5rem;
+                                .EducationProgram__list {
+                                    .EducationProgram__list-item {
+                                        &:nth-child(n):not(:last-child) {
+                                            margin-bottom: 0.5rem;
+                                        }
                                     }
                                 }
                             }
@@ -277,9 +239,6 @@
                     }
                 }
             }
-        }
-        .EducationProgram__blur-bottom {
-    
         }
     }
 }
@@ -288,46 +247,40 @@
 @media(max-width: 1280px) {
     .EducationProgram {
         height: 480px;
-        .EducationProgram__blur-top {
-    
-        }
         .EducationProgram__wrapper {
             width: 95%;
             .EducationProgram__container {
                 padding: 2.5rem 0;
                 .EducationProgram__content {
-                    .EducationProgram__title {
-    
-                    }
                     .EducationProgram__icon-arrow-wrapper {
                         margin-bottom: 2rem;
-                        .EducationProgram__icon-arrow {
-    
-                        }
                     }
                     .EducationProgram__program-group {
                         gap: 2rem;
                         .EducationProgram__program-item {
-                            .EducationProgram__header {
-                                margin-bottom: 1.25rem;
-                                .EducationProgram__module {
-    
-                                }
-                                .EducationProgram__icon-wrapper {
-                                    .EducationProgram__icon {
-    
+                            width: 500px;
+                            .EducationProgram__program-content {
+                                .EducationProgram__header {
+                                    margin-bottom: 1.25rem;
+                                    .EducationProgram__icon-wrapper {
+                                        width: 2rem;
+                                        height: 1.5rem;
+                                        .EducationProgram__icon {
+                                            width: 1.125rem;
+                                            height: 1.125rem;
+                                        }
                                     }
                                 }
-                            }
-                            .EducationProgram__header-title {
-                                margin: 0 -0.875rem;
-                                padding: 0 0.875rem;
-                                margin-bottom: 1rem;
-                            }
-                            .EducationProgram__list {
-                                .EducationProgram__list-item {
-                                    &:nth-child(n):not(:last-child) {
-                                        margin-bottom: 0.5rem;
+                                .EducationProgram__header-title {
+                                    margin: 0 -0.875rem;
+                                    padding: 0 0.875rem;
+                                    margin-bottom: 1rem;
+                                }
+                                .EducationProgram__list {
+                                    .EducationProgram__list-item {
+                                        &:nth-child(n):not(:last-child) {
+                                            margin-bottom: 0.5rem;
+                                        }
                                     }
                                 }
                             }
@@ -335,9 +288,6 @@
                     }
                 }
             }
-        }
-        .EducationProgram__blur-bottom {
-    
         }
     }
 }
@@ -347,9 +297,6 @@
 @media(max-width: 1024px) {
     .EducationProgram {
         height: 440px;
-        .EducationProgram__blur-top {
-    
-        }
         .EducationProgram__wrapper {
             width: 100%;
             padding: 0 1rem;
@@ -361,33 +308,25 @@
                     }
                     .EducationProgram__icon-arrow-wrapper {
                         margin-bottom: 1rem;
-                        .EducationProgram__icon-arrow {
-    
-                        }
                     }
                     .EducationProgram__program-group {
                         gap: 1.5rem;
                         .EducationProgram__program-item {
-                            .EducationProgram__header {
-                                margin-bottom: 1.25rem;
-                                .EducationProgram__module {
-    
+                            width: 450px;
+                            .EducationProgram__program-content {
+                                .EducationProgram__header {
+                                    margin-bottom: 1.25rem;
                                 }
-                                .EducationProgram__icon-wrapper {
-                                    .EducationProgram__icon {
-    
-                                    }
+                                .EducationProgram__header-title {
+                                    margin: 0 -0.875rem;
+                                    padding: 0 0.875rem;
+                                    margin-bottom: 1rem;
                                 }
-                            }
-                            .EducationProgram__header-title {
-                                margin: 0 -0.875rem;
-                                padding: 0 0.875rem;
-                                margin-bottom: 1rem;
-                            }
-                            .EducationProgram__list {
-                                .EducationProgram__list-item {
-                                    &:nth-child(n):not(:last-child) {
-                                        margin-bottom: 0.5rem;
+                                .EducationProgram__list {
+                                    .EducationProgram__list-item {
+                                        &:nth-child(n):not(:last-child) {
+                                            margin-bottom: 0.5rem;
+                                        }
                                     }
                                 }
                             }
@@ -396,9 +335,6 @@
                 }
             }
         }
-        .EducationProgram__blur-bottom {
-    
-        }
     }
 }
 
@@ -406,9 +342,6 @@
 @media(max-width: 768px) {
     .EducationProgram {
         height: 480px;
-        .EducationProgram__blur-top {
-    
-        }
         .EducationProgram__wrapper {
             width: 100%;
             padding: 0 1rem;
@@ -420,33 +353,25 @@
                     }
                     .EducationProgram__icon-arrow-wrapper {
                         margin-bottom: 1rem;
-                        .EducationProgram__icon-arrow {
-    
-                        }
                     }
                     .EducationProgram__program-group {
                         gap: 1rem;
                         .EducationProgram__program-item {
-                            .EducationProgram__header {
-                                margin-bottom: 1.25rem;
-                                .EducationProgram__module {
-    
+                            width: 400px;
+                            .EducationProgram__program-content {
+                                .EducationProgram__header {
+                                    margin-bottom: 1.25rem;
                                 }
-                                .EducationProgram__icon-wrapper {
-                                    .EducationProgram__icon {
-    
-                                    }
+                                .EducationProgram__header-title {
+                                    margin: 0 -0.875rem;
+                                    padding: 0 0.875rem;
+                                    margin-bottom: 1rem;
                                 }
-                            }
-                            .EducationProgram__header-title {
-                                margin: 0 -0.875rem;
-                                padding: 0 0.875rem;
-                                margin-bottom: 1rem;
-                            }
-                            .EducationProgram__list {
-                                .EducationProgram__list-item {
-                                    &:nth-child(n):not(:last-child) {
-                                        margin-bottom: 0.5rem;
+                                .EducationProgram__list {
+                                    .EducationProgram__list-item {
+                                        &:nth-child(n):not(:last-child) {
+                                            margin-bottom: 0.5rem;
+                                        }
                                     }
                                 }
                             }
@@ -455,19 +380,13 @@
                 }
             }
         }
-        .EducationProgram__blur-bottom {
-    
-        }
     }
 }
 
 /* Адаптация для экранов от 320px до 576px */
 @media(max-width: 576px) {
     .EducationProgram {
-        height: 775px;
-        .EducationProgram__blur-top {
-    
-        }
+        height: 320px;
         .EducationProgram__wrapper {
             width: 100%;
             padding: 0 0.5rem;
@@ -476,44 +395,32 @@
                 .EducationProgram__content {
                     .EducationProgram__title {
                         text-align: center;
-                        margin-bottom: 1rem;
+                        margin-bottom: 1.5rem;
                     }
                     .EducationProgram__icon-arrow-wrapper {
                         display: none;
                         margin-bottom: 1rem;
-                        .EducationProgram__icon-arrow {
-                            
-                        }
                     }
                     .EducationProgram__program-group {
-                        display: grid;
-                        grid-template-columns: repeat(1, 1fr);
-                        gap: 1rem;
                         .EducationProgram__program-item {
                             padding: 1rem;
-                            .EducationProgram__header {
-                                margin-bottom: 1.25rem;
-                                .EducationProgram__module {
-    
+                            .EducationProgram__program-content {
+                                .EducationProgram__header {
+                                    margin-bottom: 1.25rem;
                                 }
-                                .EducationProgram__icon-wrapper {
-                                    .EducationProgram__icon {
-    
-                                    }
+                                .EducationProgram__header-title {
+                                    margin: 0;
+                                    padding: 0;
+                                    border: 0;
+                                    margin-bottom: 1rem;
                                 }
-                            }
-                            .EducationProgram__header-title {
-                                margin: 0;
-                                padding: 0;
-                                border: 0;
-                                margin-bottom: 1rem;
-                            }
-                            .EducationProgram__list {
-                                margin-left: 0;
-                                list-style-type: none;
-                                .EducationProgram__list-item {
-                                    &:nth-child(n):not(:last-child) {
-                                        margin-bottom: 0.5rem;
+                                .EducationProgram__list {
+                                    margin-left: 0;
+                                    list-style-type: none;
+                                    .EducationProgram__list-item {
+                                        &:nth-child(n):not(:last-child) {
+                                            margin-bottom: 0.5rem;
+                                        }
                                     }
                                 }
                             }
@@ -521,9 +428,6 @@
                     }
                 }
             }
-        }
-        .EducationProgram__blur-bottom {
-    
         }
     }
 }

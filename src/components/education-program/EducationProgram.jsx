@@ -1,10 +1,25 @@
-import React from 'react';
+import React, {useRef} from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Mousewheel, FreeMode } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/free-mode';
 //===== assets =====//
 import './EducationProgram.scss';
 import { data } from './data';
 import {ReactComponent as ArrowRightIcon} from '../../assets/icons/education-program/arrow-right.svg';
 
 const EducationProgram = () => {
+
+  const swiperRef = useRef(null);
+
+  const handleSwiperClick = (e) => {
+    // Проверяем, что клик был именно по контейнеру Swiper, а не по слайду
+    if (e.target === swiperRef.current) {
+      const swiper = swiperRef.current.swiper;
+      swiper.slideNext();
+    }
+  };
+
   return (
     <section className="EducationProgram">
       <div className="EducationProgram__blur-top"></div>
@@ -15,32 +30,48 @@ const EducationProgram = () => {
             <div className="EducationProgram__icon-arrow-wrapper">
               <ArrowRightIcon className='EducationProgramm__icon-arrow' />
             </div>
-            <div className="EducationProgram__program-group">
+
+            <Swiper
+              ref={swiperRef}
+              modules={[Mousewheel, FreeMode]}
+              slidesPerView="auto"
+              spaceBetween={30}
+              freeMode={true}
+              mousewheel={true}
+              grabCursor={true}
+              resistance={true}
+              resistanceRatio={0.7}
+              className="EducationProgram__program-group"
+              onClick={handleSwiperClick}
+            >
               {data.map((program) => (
-                <article
-                  key={program.id} 
+                <SwiperSlide
+                  key={program.id}
                   className="EducationProgram__program-item"
                 >
-                  <div className="EducationProgram__header">
-                    <span className="EducationProgram__module">{program.module}</span>
-                    <span className="EducationProgram__icon-wrapper">
-                      {program.icon}
-                    </span>
-                  </div>
-                  <h3 className="EducationProgram__header-title">{program.title}</h3>
-                  <ul className="EducationProgram__list">
-                    {program.list.map((item) => (
-                      <li
-                        key={item.id}
-                        className='EducationProgram__list-item'
-                      >
-                        {item.descr}
-                      </li>
-                    ))}
-                  </ul>
-                </article>
+                  <article className="EducationProgram__program-content">
+                    <div className="EducationProgram__header">
+                      <span className="EducationProgram__module">{program.module}</span>
+                      <span className="EducationProgram__icon-wrapper">
+                        {program.icon}
+                      </span>
+                    </div>
+                    {program.title}
+                    <ul className="EducationProgram__list">
+                      {program.list.map((item) => (
+                        <li
+                          key={item.id}
+                          className='EducationProgram__list-item'
+                        >
+                          {item.descr}
+                        </li>
+                      ))}
+                    </ul>
+                  </article>
+                </SwiperSlide>
               ))}
-            </div>
+            </Swiper>
+
           </div>
         </div>
       </div>

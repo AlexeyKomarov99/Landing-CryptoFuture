@@ -132,56 +132,11 @@
 /* Адаптация для экранов от 1440px до 1920px */
 @media (max-width: 1920px) {
     .EducationFee {
-        .EducationFee__blur-top {
-
-        }
         .EducationFee__wrapper {
             width: 90%;
             .EducationFee__container {
                 padding: 3.5rem 0 4.5rem;
-                .EducationFee__content {
-                    .EducationFee__title {
-
-                    }
-                    .EducationFee__price-list {
-                        .EducationFee__list {
-                            .EducationFee__header-title {
-
-                            }
-                            .EducationFee__list-services {
-                                .EducationFee__service {
-                                    &:nth-child(n):not(:last-child) {
-
-                                    }
-                                }
-                                .inactive {
-
-                                }
-                            }
-                            .EducationFee__prices {
-                                .EducationFee__price {
-                                    &:nth-child(n):not(:last-child) {
-
-                                    }
-                                }
-                                .cross-out {
-
-                                }
-                            }
-                            .EducationFee__buttons {
-                                .EducationFee__btn {
-                                    &:nth-child(n):not(:last-child) {
-                                        
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
             }
-        }
-        .EducationFee__blur-bottom {
-
         }
     }
 }
@@ -189,56 +144,11 @@
 /* Адаптация для экранов от 1366px до 1440px */
 @media (max-width: 1440px) {
     .EducationFee {
-        .EducationFee__blur-top {
-
-        }
         .EducationFee__wrapper {
             width: 90%;
             .EducationFee__container {
                 padding: 1.5rem 0 4.5rem;
-                .EducationFee__content {
-                    .EducationFee__title {
-
-                    }
-                    .EducationFee__price-list {
-                        .EducationFee__list {
-                            .EducationFee__header-title {
-
-                            }
-                            .EducationFee__list-services {
-                                .EducationFee__service {
-                                    &:nth-child(n):not(:last-child) {
-
-                                    }
-                                }
-                                .inactive {
-
-                                }
-                            }
-                            .EducationFee__prices {
-                                .EducationFee__price {
-                                    &:nth-child(n):not(:last-child) {
-
-                                    }
-                                }
-                                .cross-out {
-
-                                }
-                            }
-                            .EducationFee__buttons {
-                                .EducationFee__btn {
-                                    &:nth-child(n):not(:last-child) {
-                                        
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
             }
-        }
-        .EducationFee__blur-bottom {
-
         }
     }
 }
@@ -247,8 +157,6 @@
 /* Адаптация для экранов от 1280px до 1366px */
 @media (max-width: 1366px) {
     .EducationFee {
-        .EducationFee__blur-top {
-        }
         .EducationFee__wrapper {
             width: 90%;
             .EducationFee__container {
@@ -257,44 +165,8 @@
                     .EducationFee__title {
                         margin-bottom: 3rem;
                     }
-                    .EducationFee__price-list {
-                        .EducationFee__list {
-                            .EducationFee__header-title {
-
-                            }
-                            .EducationFee__list-services {
-                                .EducationFee__service {
-                                    &:nth-child(n):not(:last-child) {
-
-                                    }
-                                }
-                                .inactive {
-
-                                }
-                            }
-                            .EducationFee__prices {
-                                .EducationFee__price {
-                                    &:nth-child(n):not(:last-child) {
-
-                                    }
-                                }
-                                .cross-out {
-
-                                }
-                            }
-                            .EducationFee__buttons {
-                                .EducationFee__btn {
-                                    &:nth-child(n):not(:last-child) {
-                                        
-                                    }
-                                }
-                            }
-                        }
-                    }
                 }
             }
-        }
-        .EducationFee__blur-bottom {
         }
     }
 }
@@ -302,8 +174,6 @@
 /* Адаптация для экранов от 1024px до 1280px */
 @media (max-width: 1280px) {
     .EducationFee {
-        .EducationFee__blur-top {
-        }
         .EducationFee__wrapper {
             width: 95%;
             .EducationFee__container {
@@ -314,44 +184,13 @@
                     }
                     .EducationFee__price-list {
                         .EducationFee__list {
-                            .EducationFee__header-title {
-
-                            }
-                            .EducationFee__list-services {
-                                .EducationFee__service {
-                                    margin-bottom: 2.5rem;
-                                    &:nth-child(n):not(:last-child) {
-
-                                    }
-                                }
-                                .inactive {
-
-                                }
-                            }
                             .EducationFee__prices {
                                 margin-bottom: 2rem;
-                                .EducationFee__price {
-                                    &:nth-child(n):not(:last-child) {
-
-                                    }
-                                }
-                                .cross-out {
-
-                                }
-                            }
-                            .EducationFee__buttons {
-                                .EducationFee__btn {
-                                    &:nth-child(n):not(:last-child) {
-                                        
-                                    }
-                                }
                             }
                         }
                     }
                 }
             }
-        }
-        .EducationFee__blur-bottom {
         }
     }
 }
@@ -360,61 +199,24 @@
 /* Адаптация для экранов от 768px до 1024px */
 @media (max-width: 1024px) {
     .EducationFee {
-        .EducationFee__blur-top {
-        }
         .EducationFee__wrapper {
             width: 100%;
             padding: 0 1rem;
             .EducationFee__container {
                 padding: 2rem 0;
                 .EducationFee__content {
-                    
-                    .EducationFee__title {
-
-                    }
                     .EducationFee__price-list {
                         display: grid;
                         grid-template-columns: repeat(1, 1fr);
                         gap: 1rem;
                         .EducationFee__list {
-                            .EducationFee__header-title {
-
-                            }
-                            .EducationFee__list-services {
-                                .EducationFee__service {
-                                    margin-bottom: 2.5rem;
-                                    &:nth-child(n):not(:last-child) {
-
-                                    }
-                                }
-                                .inactive {
-
-                                }
-                            }
                             .EducationFee__prices {
                                 margin-bottom: 2rem;
-                                .EducationFee__price {
-                                    &:nth-child(n):not(:last-child) {
-
-                                    }
-                                }
-                                .cross-out {
-
-                                }
-                            }
-                            .EducationFee__buttons {
-                                .EducationFee__btn {
-                                    &:nth-child(n):not(:last-child) {
-                                        
-                                    }
-                                }
                             }
                         }
                     }
                 }
             }
-        }
-        .EducationFee__blur-bottom {
         }
     }
 }
@@ -422,8 +224,6 @@
 /* Адаптация для экранов от 576px до 768px */
 @media (max-width: 768px) {
     .EducationFee {
-        .EducationFee__blur-top {
-        }
         .EducationFee__wrapper {
             width: 100%;
             padding: 0 1rem;
@@ -439,44 +239,18 @@
                         grid-template-columns: repeat(1, 1fr);
                         gap: 1rem;
                         .EducationFee__list {
-                            .EducationFee__header-title {
-
-                            }
                             .EducationFee__list-services {
                                 .EducationFee__service {
                                     margin-bottom: 1.5rem;
-                                    &:nth-child(n):not(:last-child) {
-
-                                    }
-                                }
-                                .inactive {
-
                                 }
                             }
                             .EducationFee__prices {
                                 margin-bottom: 1.5rem;
-                                .EducationFee__price {
-                                    &:nth-child(n):not(:last-child) {
-
-                                    }
-                                }
-                                .cross-out {
-
-                                }
-                            }
-                            .EducationFee__buttons {
-                                .EducationFee__btn {
-                                    &:nth-child(n):not(:last-child) {
-                                        
-                                    }
-                                }
                             }
                         }
                     }
                 }
             }
-        }
-        .EducationFee__blur-bottom {
         }
     }
 }
@@ -484,8 +258,6 @@
 /* Адаптация для экранов от 320px до 576px */
 @media (max-width: 576px) {
     .EducationFee {
-        .EducationFee__blur-top {
-        }
         .EducationFee__wrapper {
             width: 100%;
             padding: 0 1rem;
@@ -501,44 +273,18 @@
                         grid-template-columns: repeat(1, 1fr);
                         gap: 1rem;
                         .EducationFee__list {
-                            .EducationFee__header-title {
-
-                            }
                             .EducationFee__list-services {
                                 .EducationFee__service {
                                     margin-bottom: 1rem;
-                                    &:nth-child(n):not(:last-child) {
-
-                                    }
-                                }
-                                .inactive {
-
                                 }
                             }
                             .EducationFee__prices {
                                 margin-bottom: 1rem;
-                                .EducationFee__price {
-                                    &:nth-child(n):not(:last-child) {
-
-                                    }
-                                }
-                                .cross-out {
-
-                                }
-                            }
-                            .EducationFee__buttons {
-                                .EducationFee__btn {
-                                    &:nth-child(n):not(:last-child) {
-                                        
-                                    }
-                                }
                             }
                         }
                     }
                 }
             }
-        }
-        .EducationFee__blur-bottom {
         }
     }
 }
