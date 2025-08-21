@@ -41,12 +41,36 @@ const Education = () => {
                 <span className="Education__descr-inner">
                   Полностью безопасный и простой способ <br/> для приумножения вложений <span className="span-bold">в 8 раз за год!</span>
                 </span>
-                <ButtonCta />
+                <div className="Education__btn-wrapper">
+                  <ButtonCta />
+                </div>
               </div>
               <div className="Education__right">
+
                 <div className="Education__photo-wrapper">
-                  
+                  <img 
+                    src={MoneyOne} 
+                    alt="" 
+                    className="Education__photo one" 
+                  />
                 </div>
+
+                <div className="Education__photo-wrapper">
+                  <img 
+                    src={MoneyTwo} 
+                    alt="" 
+                    className="Education__photo two" 
+                  />
+                </div>
+
+                <div className="Education__photo-wrapper">
+                  <img 
+                    src={MoneyThree} 
+                    alt="" 
+                    className="Education__photo three" 
+                  />
+                </div>
+
               </div>
             </div>
 

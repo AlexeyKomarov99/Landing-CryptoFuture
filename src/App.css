@@ -48,6 +48,12 @@
   --transition: all 0.3s ease-out;
 }
 
+/* Адаптация для экранов выше 1920px */
+
+html {
+
+}
+
 body {
   /* 18px */
   font-size: 1.125rem;
@@ -101,8 +107,135 @@ span {
 button {
   color: var(--color-white);
   padding: 1rem 2rem;
+  /* 18px */
   font-size: 1.125rem;
   background: linear-gradient(to right, var(--color-purple), var(--color-blue));
   border-radius: var(--border-radius-hard);
   cursor: pointer;
+}
+
+/* Адаптация для экранов от 1440px до 1920px */
+@media (max-width: 1920px) {
+
+}
+
+/* Адаптация для экранов от 1366px до 1440px */
+@media (max-width: 1440px) {
+
+}
+
+/* Адаптация для экранов от 1280px до 1366px */
+@media (max-width: 1366px) {
+  body {
+    /* 16px */
+    font-size: 1rem;
+  }
+  h1 {
+    /* 50px */
+    font-size: 3.125rem;
+  }
+  h2 {
+    /* 36px */
+    font-size: 2.25rem;
+  }
+  h3 {
+    /* 20px */
+    font-size: 1.25rem;
+  }
+  span {
+
+  }
+  button {
+    /* 16px */
+    font-size: 1rem;
+  }
+}
+
+/* Адаптация для экранов от 1024px до 1280px */
+@media (max-width: 1280px) {
+  body {
+    /* 14px */
+    font-size: 0.875rem;
+  }
+  h1 {
+    /* 42px */
+    font-size: 2.625rem;
+  }
+  h2 {
+    /* 28px */
+    font-size: 1.75rem;
+  }
+  h3 {
+    /* 18px */
+    font-size: 1.125rem;
+  }
+  span {
+
+  }
+  button {
+    /* 15px */
+    font-size: 0.9375rem;
+  }
+}
+
+/* Адаптация для экранов от 768px до 1024px */
+@media (max-width: 1024px) {
+  button {
+  padding: 0.75rem 1.75rem;
+}
+}
+
+/* Адаптация для экранов от 576px до 768px */
+@media (max-width: 768px) {
+  body {
+    /* 14px */
+    font-size: 0.875rem;
+  }
+  h1 {
+    /* 38px */
+    font-size: 2.375rem;
+  }
+  h2 {
+    /* 26px */
+    font-size: 1.625rem;
+  }
+  h3 {
+    /* 16px */
+    font-size: 1rem;
+  }
+  span {
+
+  }
+  button {
+    /* 14px */
+    font-size: 0.875rem;
+  }
+}
+
+/* Адаптация для экранов от 320px до 576px */
+@media (max-width: 576px) {
+  body {
+    /* 12px */
+    font-size: 0.75rem;
+  }
+  h1 {
+    /* 24px */
+    font-size: 1.4375rem;
+  }
+  h2 {
+    /* 18px */
+    font-size: 1.125rem;
+  }
+  h3 {
+    /* 13px */
+    font-size: 0.8125rem;
+  }
+  span {
+
+  }
+  button {
+    /* 12px */
+    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
+  }
 }

@@ -1,9 +1,12 @@
 @import '../../App.css';
+
+/* Адаптация для экранов выше 1920px */
 .Darts {
     position: relative;
     background-image: url('../../assets//background/darts.png');
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
     .Darts__blur-top {
         position: absolute;
         top: 0;
@@ -28,6 +31,7 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                gap: 1rem;
                 z-index: 20;
                 .Darts__left {
                     .Darts__title {
@@ -35,7 +39,7 @@
                         margin-bottom: 1.5rem;
                     }
                     .Darts__descr {
-                        font-size: 1rem;
+                        // font-size: 1rem;
                     }
                     .text-blue {
                         color: var(--color-blue);
@@ -43,6 +47,8 @@
                 }
                 .Darts__right {
                     .Darts__photo-wrapper {
+                        width: 422px;
+                        height: 422px;
                         .Darts__photo {
                         }
                     }
@@ -68,4 +74,292 @@
     -webkit-backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, 0.45);
     z-index: 10;
+}
+
+/* Адаптация для экранов от 1440px до 1920px */
+@media (max-width: 1920px) {
+    .Darts {
+        .Darts__blur-top {
+            height: 130px;
+        }
+        .Darts__wrapper {
+            width: 90%;
+            .Darts__container {
+                padding: 1.5rem 0;
+                .Darts__content {
+                    .Darts__left {
+                        .Darts__title {
+                            margin-bottom: 1.5rem;
+                        }
+                        .Darts__descr {
+    
+                        }
+                        .text-blur {
+    
+                        }
+                    }
+                    .Darts__right {
+                        .Darts__photo-wrapper {
+                            .Darts__photo {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .Darts__blur-bottom {
+        }
+    }
+}
+
+/* Адаптация для экранов от 1366px до 1440px */
+@media (max-width: 1440px) {
+    .Darts {
+        .Darts__blur-top {
+        }
+        .Darts__wrapper {
+            width: 90%;
+            .Darts__container {
+
+                .Darts__content {
+                    .Darts__left {
+                        .Darts__title {
+                            margin-bottom: 1.5rem;
+                        }
+                        .Darts__descr {
+    
+                        }
+                        .text-blur {
+    
+                        }
+                    }
+                    .Darts__right {
+                        .Darts__photo-wrapper {
+                            .Darts__photo {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .Darts__blur-bottom {
+            height: 140px;
+        }
+    }
+}
+
+//===== tablet =====//
+/* Адаптация для экранов от 1280px до 1366px */
+@media (max-width: 1366px) {
+    .Darts {
+        .Darts__blur-top {
+            height: 150px;
+        }
+        .Darts__wrapper {
+            width: 90%;
+            .Darts__container {
+                padding: 1rem 0;
+                .Darts__content {
+                    .Darts__left {
+                        .Darts__title {
+                            margin-bottom: 1.5rem;
+                        }
+                        .Darts__descr {
+    
+                        }
+                        .text-blur {
+    
+                        }
+                    }
+                    .Darts__right {
+                        .Darts__photo-wrapper {
+                            .Darts__photo {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .Darts__blur-bottom {
+            height: 90px;
+        }
+    }
+}
+
+/* Адаптация для экранов от 1024px до 1280px */
+@media (max-width: 1280px) {
+    .Darts {
+        .Darts__blur-top {
+        }
+        .Darts__wrapper {
+            width: 95%;
+            .Darts__container {
+                padding: 0.5rem 0 1.5rem;
+                .Darts__content {
+                    .Darts__left {
+                        .Darts__title {
+                            margin-bottom: 1.5rem;
+                        }
+                        .Darts__descr {
+    
+                        }
+                        .text-blur {
+    
+                        }
+                    }
+                    .Darts__right {
+                        .Darts__photo-wrapper {
+                            width: 380px;
+                            height: 380px;
+                            .Darts__photo {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .Darts__blur-bottom {
+            height: 120px;
+            // border: 1px solid red;
+        }
+    }
+}
+
+//===== mobile =====//
+/* Адаптация для экранов от 768px до 1024px */
+@media (max-width: 1024px) {
+    .Darts {
+        height: 430px;
+        .Darts__blur-top {
+            height: 120px;
+        }
+        .Darts__wrapper {
+            width: 100%;
+            padding: 0 1rem;
+            .Darts__container {
+                padding: 1rem 0;
+                .Darts__content {
+                    gap: 0.5rem;
+                    align-items: center;
+                    .Darts__left {
+                        .Darts__title {
+                            margin-bottom: 1.5rem;
+                        }
+                        .Darts__descr {
+    
+                        }
+                        .text-blur {
+    
+                        }
+                    }
+                    .Darts__right {
+                        .Darts__photo-wrapper {
+                            width: 350px;
+                            height: 350px;
+                            .Darts__photo {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .Darts__blur-bottom {
+            height: 100px;
+        }
+    }
+}
+
+/* Адаптация для экранов от 576px до 768px */
+@media (max-width: 768px) {
+    .Darts {
+        height: 550px;
+        .Darts__blur-top {
+            height: 150px;
+        }
+        .Darts__wrapper {
+            width: 100%;
+            padding: 0 1rem;
+            .Darts__container {
+                padding: 2rem 0;
+                .Darts__content {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    text-align: center;
+                    gap: 0.5rem;
+                    .Darts__left {
+                        .Darts__title {
+                            margin-bottom: 1.25rem;
+                        }
+                        .Darts__descr {
+                        }
+                        .text-blur {
+                        }
+                    }
+                    .Darts__right {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .Darts__photo-wrapper {
+                            margin: -30px 0;
+                            .Darts__photo {
+                                width: 330px;
+                                height: 330px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .Darts__blur-bottom {
+            height: 100px;
+        }
+    }
+}
+
+/* Адаптация для экранов от 320px до 576px */
+@media (max-width: 576px) {
+    .Darts {
+        height: 480px;
+        .Darts__blur-top {
+            height: 150px;
+        }
+        .Darts__wrapper {
+            width: 100%;
+            padding: 0 1rem;
+            .Darts__container {
+                padding: 1rem 0;
+                .Darts__content {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    text-align: center;
+                    gap: 0.5rem;
+                    .Darts__left {
+                        .Darts__title {
+                            margin-bottom: 1.25rem;
+                        }
+                        .Darts__descr {
+                        }
+                        .text-blur {
+                        }
+                    }
+                    .Darts__right {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .Darts__photo-wrapper {
+                            .Darts__photo {
+                                width: 280px;
+                                height: 280px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .Darts__blur-bottom {
+            height: 90px;
+        }
+    }
 }

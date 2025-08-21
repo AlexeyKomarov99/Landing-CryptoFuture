@@ -1,4 +1,6 @@
 @import '../../App.css';
+
+/* Адаптация для экранов выше 1920px */
 .Questions {
     position: relative;
     background-image: url('../../assets/background/education.png');
@@ -56,7 +58,7 @@
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
-                                width: 2.5rem;
+                                width: 2.6rem;
                                 height: 2.5rem;
                                 background-color: var(--color-purple);
                                 border-radius: 1000px;
@@ -71,6 +73,7 @@
                         }
                         .Questions__answer-group {
                             margin-left: 1.5rem;
+                            padding-top: 1rem;
                             width: 85%;
                             .Questions__answer-item {
                                 width: 100%;
@@ -105,4 +108,343 @@
     -webkit-backdrop-filter: blur(52px);
     background: rgba(0, 0, 0, 0.2);
     z-index: 10;
+}
+
+/* Адаптация для экранов от 1440px до 1920px */
+@media (max-width: 1920px) {
+    .Questions {
+        .Questions__blur-top {
+        }
+        .Questions__wrapper {
+            width: 90%;
+            .Questions__container {
+                padding: 3rem 6.625rem;
+                .Questions__content {
+                    .Questions__title {
+
+                    }
+                    .Questions__group {
+                        .Questions__item {
+                            .Questions__header-group {
+                                .Questions__question-title {
+
+                                }
+                                .Questions__icon-wrapper {
+                                    .Questions__icon {
+
+                                    }
+                                }
+                                .active-chapter {
+
+                                }
+                            }
+                            .Questions__answer-group {
+                                .Questions__answer-item {
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .Questions__blur-bottom {
+        }
+    }
+}
+
+/* Адаптация для экранов от 1366px до 1440px */
+@media (max-width: 1440px) {
+    .Questions {
+        .Questions__blur-top {
+        }
+        .Questions__wrapper {
+            width: 90%;
+            .Questions__container {
+                padding: 3.5rem 6.625rem 2.5rem;
+                .Questions__content {
+                    .Questions__title {
+                        margin-bottom: 3rem;
+                    }
+                    .Questions__group {
+                        .Questions__item {
+                            padding: 1.25rem 0;
+                            .Questions__header-group {
+                                .Questions__question-title {
+
+                                }
+                                .Questions__icon-wrapper {
+                                    width: 2.35rem;
+                                    height: 2.25rem;
+                                    font-size: 1.5rem;
+                                    .Questions__icon {
+
+                                    }
+                                }
+                                .active-chapter {
+
+                                }
+                            }
+                            .Questions__answer-group {
+                                .Questions__answer-item {
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .Questions__blur-bottom {
+            height: 116px;
+        }
+    }
+}
+
+//===== tablet =====//
+/* Адаптация для экранов от 1280px до 1366px */
+@media (max-width: 1366px) {
+    .Questions {
+        .Questions__blur-top {
+        }
+        .Questions__wrapper {
+            width: 90%;
+            .Questions__container {
+                padding: 3rem 5rem 2rem;
+                .Questions__content {
+                    .Questions__title {
+                        margin-bottom: 2.25rem;
+                    }
+                    .Questions__group {
+                        .Questions__item {
+                            padding: 1.25rem 0;
+                            .Questions__header-group {
+                                .Questions__question-title {
+
+                                }
+                                .Questions__icon-wrapper {
+                                    width: 2.35rem;
+                                    height: 2.25rem;
+                                    font-size: 1.5rem;
+                                    .Questions__icon {
+
+                                    }
+                                }
+                                .active-chapter {
+
+                                }
+                            }
+                            .Questions__answer-group {
+                                .Questions__answer-item {
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .Questions__blur-bottom {
+            height: 136px;
+        }
+    }
+}
+
+/* Адаптация для экранов от 1024px до 1280px */
+@media (max-width: 1280px) {
+    .Questions {
+        .Questions__blur-top {
+        }
+        .Questions__wrapper {
+            width: 95%;
+            .Questions__container {
+                padding: 2rem 5.5rem 1.5rem;
+                .Questions__content {
+                    .Questions__title {
+                        margin-bottom: 2rem;
+                    }
+                    .Questions__group {
+                        .Questions__item {
+                            padding: 1.125rem 0;
+                            .Questions__header-group {
+                                .Questions__question-title {
+
+                                }
+                                .Questions__icon-wrapper {
+                                    width: 2.1rem;
+                                    height: 2rem;
+                                    font-size: 1.25rem;
+                                    .Questions__icon {
+
+                                    }
+                                }
+                                .active-chapter {
+
+                                }
+                            }
+                            .Questions__answer-group {
+                                .Questions__answer-item {
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .Questions__blur-bottom {
+            height: 120px;
+        }
+    }
+}
+
+//===== mobile =====//
+/* Адаптация для экранов от 768px до 1024px */
+@media (max-width: 1024px) {
+    .Questions {
+        .Questions__blur-top {
+            height: 130px;
+        }
+        .Questions__wrapper {
+            width: 100%;
+            padding: 0 1rem;
+            .Questions__container {
+                padding: 1.5rem 4rem 1.25rem;
+                .Questions__content {
+                    .Questions__title {
+                        margin-bottom: 1.75rem;
+                    }
+                    .Questions__group {
+                        .Questions__item {
+                            padding: 1rem 0;
+                            .Questions__header-group {
+                                .Questions__question-title {
+
+                                }
+                                .Questions__icon-wrapper {
+                                    width: 1.85rem;
+                                    height: 1.75rem;
+                                    font-size: 1.125rem;
+                                    .Questions__icon {
+
+                                    }
+                                }
+                                .active-chapter {
+
+                                }
+                            }
+                            .Questions__answer-group {
+                                .Questions__answer-item {
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .Questions__blur-bottom {
+            height: 75px;
+        }
+    }
+}
+
+/* Адаптация для экранов от 576px до 768px */
+@media (max-width: 768px) {
+    .Questions {
+        .Questions__blur-top {
+            height: 145px;
+        }
+        .Questions__wrapper {
+            width: 100%;
+            padding: 0 1rem;
+            .Questions__container {
+                padding: 1.25rem 3.5rem 1rem;
+                .Questions__content {
+                    .Questions__title {
+                        margin-bottom: 1.75rem;
+                    }
+                    .Questions__group {
+                        .Questions__item {
+                            padding: 0.85rem 0;
+                            .Questions__header-group {
+                                .Questions__question-title {
+                                    
+                                }
+                                .Questions__icon-wrapper {
+                                    width: 1.85rem;
+                                    height: 1.75rem;
+                                    font-size: 1.125rem;
+                                    .Questions__icon {
+
+                                    }
+                                }
+                                .active-chapter {
+
+                                }
+                            }
+                            .Questions__answer-group {
+                                .Questions__answer-item {
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .Questions__blur-bottom {
+            height: 85px;
+        }
+    }
+}
+
+/* Адаптация для экранов от 320px до 576px */
+@media (max-width: 576px) {
+    .Questions {
+        .Questions__blur-top {
+            height: 145px;
+        }
+        .Questions__wrapper {
+            width: 100%;
+            padding: 0 1rem;
+            .Questions__container {
+                padding: 1.25rem 1rem 1rem;
+                .Questions__content {
+                    .Questions__title {
+                        margin-bottom: 1.25rem;
+                    }
+                    .Questions__group {
+                        .Questions__item {
+                            padding: 0.7rem 0;
+                            .Questions__header-group {
+                                .Questions__question-title {
+                                    
+                                }
+                                .Questions__icon-wrapper {
+                                    width: 1.75rem;
+                                    height: 1.5rem;
+                                    font-size: 1rem;
+                                    .Questions__icon {
+
+                                    }
+                                }
+                                .active-chapter {
+
+                                }
+                            }
+                            .Questions__answer-group {
+                                .Questions__answer-item {
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .Questions__blur-bottom {
+            height: 75px;
+        }
+    }
 }

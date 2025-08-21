@@ -1,4 +1,6 @@
 @import '../../App.css';
+
+/* Адаптация для экранов выше 1920px */
 .EducationProgram {
     position: relative;
     background-image: url('../../assets/background/education.png');
@@ -31,6 +33,7 @@
                 justify-content: center;
                 align-items: center;
                 z-index: 40;
+                overflow: hidden;
                 .EducationProgram__title {
                     margin-bottom: 1.5rem;
                 }
@@ -42,7 +45,6 @@
                 }
                 .EducationProgram__program-group {
                     width: 100%;
-                    display: flex;
                     display: grid;
                     grid-template-columns: repeat(3, 1fr);
                     gap: 2.5rem;
@@ -76,6 +78,11 @@
                             margin-bottom: 1rem;
                         }
                         .EducationProgram__list {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            justify-content: flex-start;
                             list-style-type: disc;
                             margin-left: 1.2rem;
                             .EducationProgram__list-item {
@@ -111,4 +118,412 @@
     -webkit-backdrop-filter: blur(52px);
     background: rgba(0, 0, 0, 0.2);
     z-index: 10;
+}
+
+/* Адаптация для экранов от 1440px до 1920px */
+@media(max-width: 1920px) {
+    .EducationProgram {
+        height: 570px;
+        .EducationProgram__blur-top {
+    
+        }
+        .EducationProgram__wrapper {
+            width: 90%;
+            .EducationProgram__container {
+                padding: 2.5rem 0 4rem;
+                .EducationProgram__content {
+                    .EducationProgram__title {
+    
+                    }
+                    .EducationProgram__icon-arrow-wrapper {
+                        margin-bottom: 2rem;
+                        .EducationProgram__icon-arrow {
+    
+                        }
+                    }
+                    .EducationProgram__program-group {
+                        gap: 2rem;
+                        .EducationProgram__program-item {
+                            .EducationProgram__header {
+                                margin-bottom: 1.25rem;
+                                .EducationProgram__module {
+    
+                                }
+                                .EducationProgram__icon-wrapper {
+                                    .EducationProgram__icon {
+    
+                                    }
+                                }
+                            }
+                            .EducationProgram__header-title {
+                            }
+                            .EducationProgram__list {
+                                .EducationProgram__list-item {
+    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .EducationProgram__blur-bottom {
+    
+        }
+    }
+}
+
+/* Адаптация для экранов от 1366px до 1440px */
+@media(max-width: 1440px) {
+    .EducationProgram {
+        height: 540px;
+        .EducationProgram__blur-top {
+    
+        }
+        .EducationProgram__wrapper {
+            width: 90%;
+            .EducationProgram__container {
+                padding: 2rem 0 4rem;
+                .EducationProgram__content {
+                    .EducationProgram__title {
+    
+                    }
+                    .EducationProgram__icon-arrow-wrapper {
+                        margin-bottom: 2rem;
+                        .EducationProgram__icon-arrow {
+    
+                        }
+                    }
+                    .EducationProgram__program-group {
+                        gap: 2rem;
+                        .EducationProgram__program-item {
+                            .EducationProgram__header {
+                                margin-bottom: 1.25rem;
+                                .EducationProgram__module {
+    
+                                }
+                                .EducationProgram__icon-wrapper {
+                                    .EducationProgram__icon {
+    
+                                    }
+                                }
+                            }
+                            .EducationProgram__header-title {
+                            }
+                            .EducationProgram__list {
+                                .EducationProgram__list-item {
+                                    &:nth-child(n):not(:last-child) {
+                                        margin-bottom: 0.5rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .EducationProgram__blur-bottom {
+    
+        }
+    }
+}
+
+//===== tablet =====//
+/* Адаптация для экранов от 1280px до 1366px */
+@media(max-width: 1366px) {
+    .EducationProgram {
+        height: 520px;
+        .EducationProgram__blur-top {
+    
+        }
+        .EducationProgram__wrapper {
+            width: 90%;
+            .EducationProgram__container {
+                padding: 2.5rem 0 4rem;
+                .EducationProgram__content {
+                    .EducationProgram__title {
+    
+                    }
+                    .EducationProgram__icon-arrow-wrapper {
+                        margin-bottom: 2rem;
+                        .EducationProgram__icon-arrow {
+    
+                        }
+                    }
+                    .EducationProgram__program-group {
+                        gap: 2rem;
+                        .EducationProgram__program-item {
+                            .EducationProgram__header {
+                                margin-bottom: 1.25rem;
+                                .EducationProgram__module {
+    
+                                }
+                                .EducationProgram__icon-wrapper {
+                                    .EducationProgram__icon {
+    
+                                    }
+                                }
+                            }
+                            .EducationProgram__header-title {
+                            }
+                            .EducationProgram__list {
+                                .EducationProgram__list-item {
+                                    &:nth-child(n):not(:last-child) {
+                                        margin-bottom: 0.5rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .EducationProgram__blur-bottom {
+    
+        }
+    }
+}
+
+/* Адаптация для экранов от 1024px до 1280px */
+@media(max-width: 1280px) {
+    .EducationProgram {
+        height: 480px;
+        .EducationProgram__blur-top {
+    
+        }
+        .EducationProgram__wrapper {
+            width: 95%;
+            .EducationProgram__container {
+                padding: 2.5rem 0;
+                .EducationProgram__content {
+                    .EducationProgram__title {
+    
+                    }
+                    .EducationProgram__icon-arrow-wrapper {
+                        margin-bottom: 2rem;
+                        .EducationProgram__icon-arrow {
+    
+                        }
+                    }
+                    .EducationProgram__program-group {
+                        gap: 2rem;
+                        .EducationProgram__program-item {
+                            .EducationProgram__header {
+                                margin-bottom: 1.25rem;
+                                .EducationProgram__module {
+    
+                                }
+                                .EducationProgram__icon-wrapper {
+                                    .EducationProgram__icon {
+    
+                                    }
+                                }
+                            }
+                            .EducationProgram__header-title {
+                                margin: 0 -0.875rem;
+                                padding: 0 0.875rem;
+                                margin-bottom: 1rem;
+                            }
+                            .EducationProgram__list {
+                                .EducationProgram__list-item {
+                                    &:nth-child(n):not(:last-child) {
+                                        margin-bottom: 0.5rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .EducationProgram__blur-bottom {
+    
+        }
+    }
+}
+
+//===== mobile =====//
+/* Адаптация для экранов от 768px до 1024px */
+@media(max-width: 1024px) {
+    .EducationProgram {
+        height: 440px;
+        .EducationProgram__blur-top {
+    
+        }
+        .EducationProgram__wrapper {
+            width: 100%;
+            padding: 0 1rem;
+            .EducationProgram__container {
+                padding: 1.5rem 0;
+                .EducationProgram__content {
+                    .EducationProgram__title {
+                        margin-bottom: 1rem;
+                    }
+                    .EducationProgram__icon-arrow-wrapper {
+                        margin-bottom: 1rem;
+                        .EducationProgram__icon-arrow {
+    
+                        }
+                    }
+                    .EducationProgram__program-group {
+                        gap: 1.5rem;
+                        .EducationProgram__program-item {
+                            .EducationProgram__header {
+                                margin-bottom: 1.25rem;
+                                .EducationProgram__module {
+    
+                                }
+                                .EducationProgram__icon-wrapper {
+                                    .EducationProgram__icon {
+    
+                                    }
+                                }
+                            }
+                            .EducationProgram__header-title {
+                                margin: 0 -0.875rem;
+                                padding: 0 0.875rem;
+                                margin-bottom: 1rem;
+                            }
+                            .EducationProgram__list {
+                                .EducationProgram__list-item {
+                                    &:nth-child(n):not(:last-child) {
+                                        margin-bottom: 0.5rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .EducationProgram__blur-bottom {
+    
+        }
+    }
+}
+
+/* Адаптация для экранов от 576px до 768px */
+@media(max-width: 768px) {
+    .EducationProgram {
+        height: 480px;
+        .EducationProgram__blur-top {
+    
+        }
+        .EducationProgram__wrapper {
+            width: 100%;
+            padding: 0 1rem;
+            .EducationProgram__container {
+                padding: 3rem 0 3rem;
+                .EducationProgram__content {
+                    .EducationProgram__title {
+                        margin-bottom: 1rem;
+                    }
+                    .EducationProgram__icon-arrow-wrapper {
+                        margin-bottom: 1rem;
+                        .EducationProgram__icon-arrow {
+    
+                        }
+                    }
+                    .EducationProgram__program-group {
+                        gap: 1rem;
+                        .EducationProgram__program-item {
+                            .EducationProgram__header {
+                                margin-bottom: 1.25rem;
+                                .EducationProgram__module {
+    
+                                }
+                                .EducationProgram__icon-wrapper {
+                                    .EducationProgram__icon {
+    
+                                    }
+                                }
+                            }
+                            .EducationProgram__header-title {
+                                margin: 0 -0.875rem;
+                                padding: 0 0.875rem;
+                                margin-bottom: 1rem;
+                            }
+                            .EducationProgram__list {
+                                .EducationProgram__list-item {
+                                    &:nth-child(n):not(:last-child) {
+                                        margin-bottom: 0.5rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .EducationProgram__blur-bottom {
+    
+        }
+    }
+}
+
+/* Адаптация для экранов от 320px до 576px */
+@media(max-width: 576px) {
+    .EducationProgram {
+        height: 775px;
+        .EducationProgram__blur-top {
+    
+        }
+        .EducationProgram__wrapper {
+            width: 100%;
+            padding: 0 0.5rem;
+            .EducationProgram__container {
+                padding: 1rem 0 1rem;
+                .EducationProgram__content {
+                    .EducationProgram__title {
+                        text-align: center;
+                        margin-bottom: 1rem;
+                    }
+                    .EducationProgram__icon-arrow-wrapper {
+                        display: none;
+                        margin-bottom: 1rem;
+                        .EducationProgram__icon-arrow {
+                            
+                        }
+                    }
+                    .EducationProgram__program-group {
+                        display: grid;
+                        grid-template-columns: repeat(1, 1fr);
+                        gap: 1rem;
+                        .EducationProgram__program-item {
+                            padding: 1rem;
+                            .EducationProgram__header {
+                                margin-bottom: 1.25rem;
+                                .EducationProgram__module {
+    
+                                }
+                                .EducationProgram__icon-wrapper {
+                                    .EducationProgram__icon {
+    
+                                    }
+                                }
+                            }
+                            .EducationProgram__header-title {
+                                margin: 0;
+                                padding: 0;
+                                border: 0;
+                                margin-bottom: 1rem;
+                            }
+                            .EducationProgram__list {
+                                margin-left: 0;
+                                list-style-type: none;
+                                .EducationProgram__list-item {
+                                    &:nth-child(n):not(:last-child) {
+                                        margin-bottom: 0.5rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .EducationProgram__blur-bottom {
+    
+        }
+    }
 }

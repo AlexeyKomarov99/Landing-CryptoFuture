@@ -55,7 +55,9 @@ const Banner = () => {
                 </div>
                 <h1 className="Banner__title">CryptoFuture: <br/> ретродропы</h1>
                 <h3 className="Banner__title-descr">Преумножь вложения в 8 раз за год, <br/> выполняя простые действия</h3>
-                <ButtonCta className='btn' />
+                <div className="btn-wrapper">
+                  <ButtonCta className='btn' />
+                </div>
               </div>
               
               <div className="Banner__content-right">

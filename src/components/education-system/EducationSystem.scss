@@ -1,4 +1,6 @@
 @import '../../App.css';
+
+/* Адаптация для экранов выше 1920px */
 .EducationSystem {
     position: relative;
     background-image: url('../../assets/background/banner.png');
@@ -40,7 +42,7 @@
                         display: flex;
                         gap: 0.625rem;
                         margin-bottom: 0.625rem;
-                        .EducationSystem__step-edu {         
+                        .EducationSystem__step-edu {      
                             border: var(--border-dark-gray);
                             border-radius: var(--border-radius-small);
                             background: var(--background-dark);
@@ -129,4 +131,410 @@
     -webkit-backdrop-filter: blur(52px);
     background: rgba(0, 0, 0, 0.2);
     z-index: 10;
+}
+
+/* Адаптация для экранов от 1440px до 1920px */
+@media (max-width: 1920px) {
+    .EducationSystem {
+        .EducationSystem__blur-top {
+
+        }
+        .EducationSystem__wrapper {
+            width: 90%;
+            .EducationSystem__container {
+                .EducationSystem__content {
+                    .EducationSystem__title {
+
+                    }
+                    .EducationSystem__content-rows {
+                        .EducationSystem__row {
+                            .EducationSystem__step-edu {
+                                .EducationSystem__header {
+                                    .EducationSystem__header-title {
+
+                                    }
+                                    .EducationSystem__number {
+                                        
+                                    }
+                                }
+                                .EducationSystem__body {
+                                    .EducationSystem__edu {
+
+                                    }
+                                }
+                            }
+                        }
+                        .row1 {
+
+                        }
+                        .row2 {
+
+                        }
+                        .row3 {
+
+                        }
+                    }
+                    .EducationSystem__btn {
+
+                    }
+                }
+            }
+        }
+        .EducationSystem__blur-bottom {
+
+        }
+    }
+}
+
+/* Адаптация для экранов от 1366px до 1440px */
+@media (max-width: 1440px) {
+    .EducationSystem {
+        .EducationSystem__blur-top {
+            
+        }
+        .EducationSystem__wrapper {
+            width: 90%;
+            .EducationSystem__container {
+                padding: 4rem 0 3.25rem;
+                .EducationSystem__content {
+                    .EducationSystem__title {
+                        margin-bottom: 3rem;
+                    }
+                    .EducationSystem__content-rows {
+                        margin-bottom: 4rem;
+                        .EducationSystem__row {
+                            .EducationSystem__step-edu {
+                                .EducationSystem__header {
+                                    .EducationSystem__header-title {
+
+                                    }
+                                    .EducationSystem__number {
+                                        
+                                    }
+                                }
+                                .EducationSystem__body {
+                                    .EducationSystem__edu {
+
+                                    }
+                                }
+                            }
+                        }
+                        .row1 {
+
+                        }
+                        .row2 {
+
+                        }
+                        .row3 {
+
+                        }
+                    }
+                    .EducationSystem__btn {
+
+                    }
+                }
+            }
+        }
+        .EducationSystem__blur-bottom {
+
+        }
+    }
+}
+
+//===== tablet =====//
+/* Адаптация для экранов от 1280px до 1366px */
+@media (max-width: 1366px) {
+    .EducationSystem {
+        .EducationSystem__blur-top {
+            
+        }
+        .EducationSystem__wrapper {
+            width: 90%;
+            .EducationSystem__container {
+                padding: 4rem 0 3.25rem;
+                .EducationSystem__content {
+                    .EducationSystem__title {
+                        margin-bottom: 3rem;
+                    }
+                    .EducationSystem__content-rows {
+                        margin-bottom: 4rem;
+                        .EducationSystem__row {
+                            .EducationSystem__step-edu {
+                                .EducationSystem__header {
+                                    .EducationSystem__header-title {
+
+                                    }
+                                    .EducationSystem__number {
+                                        
+                                    }
+                                }
+                                .EducationSystem__body {
+                                    .EducationSystem__edu {
+
+                                    }
+                                }
+                            }
+                        }
+                        .row1 {
+
+                        }
+                        .row2 {
+
+                        }
+                        .row3 {
+
+                        }
+                    }
+                    .EducationSystem__btn {
+
+                    }
+                }
+            }
+        }
+        .EducationSystem__blur-bottom {
+
+        }
+    }
+}
+
+/* Адаптация для экранов от 1024px до 1280px */
+@media (max-width: 1280px) {
+    .EducationSystem {
+        .EducationSystem__blur-top {
+            
+        }
+        .EducationSystem__wrapper {
+            width: 95%;
+            .EducationSystem__container {
+                padding: 3rem 0 3.25rem;
+                .EducationSystem__content {
+                    .EducationSystem__title {
+                        margin-bottom: 2rem;
+                    }
+                    .EducationSystem__content-rows {
+                        margin-bottom: 2.5rem;
+                        .EducationSystem__row {
+                            .EducationSystem__step-edu {
+                                .EducationSystem__header {
+                                    .EducationSystem__header-title {
+
+                                    }
+                                    .EducationSystem__number {
+                                        
+                                    }
+                                }
+                                .EducationSystem__body {
+                                    .EducationSystem__edu {
+
+                                    }
+                                }
+                            }
+                        }
+                        .row1 {
+
+                        }
+                        .row2 {
+
+                        }
+                        .row3 {
+
+                        }
+                    }
+                    .EducationSystem__btn {
+
+                    }
+                }
+            }
+        }
+        .EducationSystem__blur-bottom {
+
+        }
+    }
+}
+
+//===== mobile =====//
+/* Адаптация для экранов от 768px до 1024px */
+@media (max-width: 1024px) {
+    .EducationSystem {
+        .EducationSystem__blur-top {
+            
+        }
+        .EducationSystem__wrapper {
+            width: 100%;
+            padding: 0 1rem;
+            .EducationSystem__container {
+                padding: 2rem 0 3rem;
+                .EducationSystem__content {
+                    .EducationSystem__title {
+                        margin-bottom: 2rem;
+                    }
+                    .EducationSystem__content-rows {
+                        width: 100%;
+                        margin-bottom: 2.5rem;
+                        .EducationSystem__row {
+                            width: 100%;
+                            display: grid;
+                            grid-template-columns: repeat(1, 1fr);
+                            .EducationSystem__step-edu {
+                                width: 100%;
+                                .EducationSystem__header {
+                                    .EducationSystem__header-title {
+
+                                    }
+                                    .EducationSystem__number {
+                                        
+                                    }
+                                }
+                                .EducationSystem__body {
+                                    width: 90%;
+                                    .EducationSystem__edu {
+
+                                    }
+                                }
+                            }
+                        }
+                        .row1 {
+                            width: 100%;
+                        }
+                        .row2 {
+                            width: 100%;
+                        }
+                        .row3 {
+                            width: 100%;
+                        }
+                    }
+                    .EducationSystem__btn {
+
+                    }
+                }
+            }
+        }
+        .EducationSystem__blur-bottom {
+
+        }
+    }
+}
+
+/* Адаптация для экранов от 576px до 768px */
+@media (max-width: 768px) {
+    .EducationSystem {
+        .EducationSystem__blur-top {
+            
+        }
+        .EducationSystem__wrapper {
+            width: 100%;
+            padding: 0 1rem;
+            .EducationSystem__container {
+                padding: 1.5rem 0 2rem;
+                .EducationSystem__content {
+                    .EducationSystem__title {
+                        margin-bottom: 2rem;
+                    }
+                    .EducationSystem__content-rows {
+                        width: 100%;
+                        margin-bottom: 2.5rem;
+                        .EducationSystem__row {
+                            width: 100%;
+                            display: grid;
+                            grid-template-columns: repeat(1, 1fr);
+                            .EducationSystem__step-edu {
+                                width: 100%;
+                                .EducationSystem__header {
+                                    .EducationSystem__header-title {
+
+                                    }
+                                    .EducationSystem__number {
+                                        
+                                    }
+                                }
+                                .EducationSystem__body {
+                                    width: 90%;
+                                    .EducationSystem__edu {
+
+                                    }
+                                }
+                            }
+                        }
+                        .row1 {
+                            width: 100%;
+                        }
+                        .row2 {
+                            width: 100%;
+                        }
+                        .row3 {
+                            width: 100%;
+                        }
+                    }
+                    .EducationSystem__btn {
+
+                    }
+                }
+            }
+        }
+        .EducationSystem__blur-bottom {
+            height: 55px;
+        }
+    }
+}
+
+/* Адаптация для экранов от 320px до 576px */
+@media (max-width: 576px) {
+    .EducationSystem {
+        .EducationSystem__blur-top {
+            
+        }
+        .EducationSystem__wrapper {
+            width: 100%;
+            padding: 0 1rem;
+            .EducationSystem__container {
+                padding: 1.5rem 0 2rem;
+                .EducationSystem__content {
+                    .EducationSystem__title {
+                        margin-bottom: 2rem;
+                    }
+                    .EducationSystem__content-rows {
+                        width: 100%;
+                        margin-bottom: 1.5rem;
+                        .EducationSystem__row {
+                            width: 100%;
+                            display: grid;
+                            grid-template-columns: repeat(1, 1fr);
+                            .EducationSystem__step-edu {
+                                width: 100%;
+                                .EducationSystem__header {
+                                    .EducationSystem__header-title {
+
+                                    }
+                                    .EducationSystem__number {
+                                        font-size: 2.75rem;
+                                    }
+                                }
+                                .EducationSystem__body {
+                                    width: 90%;
+                                    .EducationSystem__edu {
+
+                                    }
+                                }
+                            }
+                        }
+                        .row1 {
+                            width: 100%;
+                        }
+                        .row2 {
+                            width: 100%;
+                        }
+                        .row3 {
+                            width: 100%;
+                        }
+                    }
+                    .EducationSystem__btn {
+
+                    }
+                }
+            }
+        }
+        .EducationSystem__blur-bottom {
+            height: 55px;
+        }
+    }
 }

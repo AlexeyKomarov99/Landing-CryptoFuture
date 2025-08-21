@@ -5,6 +5,7 @@
     position: relative;
     background-image: url('../../assets//background/education.png');
     background-size: cover;
+    overflow: hidden;
     .Education__blur-top {
         position: absolute;
         width: 100%;
@@ -40,8 +41,9 @@
                     width: 100%;
                     display: grid;
                     grid-template-columns: repeat(3, 1fr);
+                    align-items: flex-start;
+                    text-align: center;
                     gap: 3.75rem;
-                    // margin-bottom: 5.125rem;
                     margin-bottom: 8.125rem;
                     .Education__item {
                         width: 100%;
@@ -49,11 +51,9 @@
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
-                        text-align: center;
                         .Education__icon-wrapper {
                             width: 3.125rem;
                             height: 3.125rem;
-                            text-align: center;
                             margin-bottom: 0.875rem;
                             box-shadow: 9.1px 10.24px 21.62px 0px rgba(0, 0, 0, 0.7);
                             background: linear-gradient(90.88deg, #6C089E 0.25%, #0B7DD0 100%);
@@ -61,6 +61,11 @@
                             border: 1px solid rgba(106, 106, 106, 1);
                             padding: 1px;
                             .Education__icon {
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
                             }
                         }
                         .Education__descr {
@@ -95,16 +100,29 @@
                         }
                     }
                     .Education__right {
-                        position: absolute;
-                        top: -100%;
-                        right: 15%;
+                        
                         .Education__photo-wrapper {
-                            // 330px - 390px
-                            width: 20.625rem;
-                            height: 22.375rem;
-                            // border: 1px solid red;
+
                             .Education__photo {
 
+                            }
+                            .one {
+                                position: absolute;
+                                top: -14%;
+                                right: 15%;
+                                z-index: 30;
+                            }
+                            .two {
+                                position: absolute;
+                                top: -10%;
+                                right: 5%;
+                                z-index: 30;
+                            }
+                            .three {
+                                position: absolute;
+                                top: 28%;
+                                right: 5.5%;
+                                z-index: 30;
                             }
                         }
                     }
@@ -130,4 +148,379 @@
     -webkit-backdrop-filter: blur(52px);
     background: rgba(0, 0, 0, 0.2);
     z-index: 10;
+}
+
+/* Адаптация для экранов от 1440px до 1920px */
+@media (max-width: 1920px) {
+    .Education {
+        .Education__wrapper {
+            width: 90%;
+        }
+    }
+}
+
+/* Адаптация для экранов от 1366px до 1440px */
+@media (max-width: 1440px) {
+    .Education {
+        .Education__wrapper {
+            width: 90%;
+        }
+    }
+}
+
+//===== tablet =====//
+/* Адаптация для экранов от 1280px до 1366px */
+@media (max-width: 1366px) {
+    .Education {
+        .Education__blur-top {
+        }
+        .Education__wrapper {
+            width: 90%;
+            .Education__container {
+                padding: 4.625rem 0 3rem;
+                .Education__content {
+                    .Education__title {
+                        margin-bottom: 2.5rem;
+                    }
+                    .Education__group {
+                        margin-bottom: 5.5rem;
+                        .Education__item {
+                            .Education__icon-wrapper {
+                                .Education__icon {
+
+                                }
+                            }
+                            .Education__descr {
+
+                            }
+                        }
+                    }
+                    .Education__content-inner {
+                        .Education__left {
+                            .Education__title-inner {
+
+                            }
+                            .Education__descr-inner {
+
+                            }
+                        }
+                        .Education__right {
+                            .Education__photo-wrapper {
+                                .Education__photo {
+
+                                }
+                                .one {
+                                    top: -12%;
+                                }
+                                .two {
+                                    top: -10%;
+                                    right: 4%;
+                                }
+                                .three {
+                                    top: 32%;
+                                    right: 5%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .Education__blur-bottom {
+            height: 80px;
+        }
+    }
+}
+
+/* Адаптация для экранов от 1024px до 1280px */
+@media (max-width: 1280px) {
+    .Education {
+        .Education__blur-top {
+        }
+        .Education__wrapper {
+            width: 95%;
+            .Education__container {
+                padding: 4.625rem 0 3rem;
+                .Education__content {
+                    .Education__title {
+                        margin-bottom: 2.5rem;
+                    }
+                    .Education__group {
+                        margin-bottom: 4.5rem;
+                        .Education__item {
+                            .Education__icon-wrapper {
+                                .Education__icon {
+
+                                }
+                            }
+                            .Education__descr {
+
+                            }
+                        }
+                    }
+                    .Education__content-inner {
+                        .Education__left {
+                            .Education__title-inner {
+
+                            }
+                            .Education__descr-inner {
+
+                            }
+                        }
+                        .Education__right {
+                            .Education__photo-wrapper {
+                                .Education__photo {
+
+                                }
+                                .one {
+                                    top: -14%;
+                                }
+                                .two {
+                                    top: -10%;
+                                    right: 2%;
+                                }
+                                .three {
+                                    top: 32%;
+                                    right: 4%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .Education__blur-bottom {
+            height: 80px;
+        }
+    }
+}
+
+//===== mobile =====//
+/* Адаптация для экранов от 768px до 1024px */
+@media (max-width: 1024px) {
+    .Education {
+        .Education__blur-top {
+        }
+        .Education__wrapper {
+            width: 100%;
+            padding: 0 1rem;
+            .Education__container {
+                padding: 4.625rem 0 3rem;
+                .Education__content {
+                    .Education__title {
+                        margin-bottom: 2.5rem;
+                    }
+                    .Education__group {
+                        width: 92%;
+                        margin: 0 auto;
+                        margin-bottom: 4.5rem;
+                        gap: 3rem;
+                        
+                        .Education__item {
+                            .Education__icon-wrapper {
+                                .Education__icon {
+
+                                }
+                            }
+                            .Education__descr {
+
+                            }
+                        }
+                    }
+                    .Education__content-inner {
+                        .Education__left {
+                            .Education__title-inner {
+
+                            }
+                            .Education__descr-inner {
+
+                            }
+                        }
+                        .Education__right {
+                            .Education__photo-wrapper {
+                                .Education__photo {
+
+                                }
+                                .one {
+                                    top: -20%;
+                                }
+                                .two {
+                                    top: -10%;
+                                    right: -1%;
+                                }
+                                .three {
+                                    top: 28%;
+                                    right: 3%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .Education__blur-bottom {
+            height: 80px;
+        }
+    }
+}
+
+/* Адаптация для экранов от 576px до 768px */
+@media (max-width: 768px) {
+    .Education {
+        .Education__blur-top {
+        }
+        .Education__wrapper {
+            width: 100%;
+            padding: 0 1rem;
+            .Education__container {
+                padding: 3rem 0 2rem;
+                .Education__content {
+                    .Education__title {
+                        margin-bottom: 2.5rem;
+                    }
+                    .Education__group {
+                        width: 92%;
+                        margin: 0 auto;
+                        margin-bottom: 4.5rem;
+                        gap: 1.5rem;
+                        margin-bottom: 4rem;
+                        .Education__item {
+                            .Education__icon-wrapper {
+                                width: 2.75rem;
+                                height: 2.75rem;
+                                padding: 0.75px;
+                                .Education__icon {
+                                    
+                                }
+                            }
+                            .Education__descr {
+
+                            }
+                        }
+                    }
+                    .Education__content-inner {
+                        .Education__left {
+                            .Education__title-inner {
+
+                            }
+                            .Education__descr-inner {
+
+                            }
+                        }
+                        .Education__right {
+                            .Education__photo-wrapper {
+                                .Education__photo {
+
+                                }
+                                .one {
+                                    top: -12%;
+                                    right: 3%;
+                                }
+                                .two {
+                                    display: none;
+                                }
+                                .three {
+                                    width: 280px;
+                                    height: 220px;
+                                    top: 32%;
+                                    right: -3%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .Education__blur-bottom {
+            height: 60px;
+        }
+    }
+}
+
+/* Адаптация для экранов от 320px до 576px */
+@media (max-width: 576px) {
+    .Education {
+        .Education__blur-top {
+        }
+        .Education__wrapper {
+            width: 100%;
+            padding: 0 1rem;
+            .Education__container {
+                padding: 1.5rem 0;
+                .Education__content {
+                    .Education__title {
+                        margin-bottom: 2.5rem;
+                    }
+                    .Education__group {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 1rem;
+                        margin-bottom: 2.5rem;
+                        .Education__item {
+                            width: 70%;
+                            .Education__icon-wrapper {
+                                width: 2.5rem;
+                                height: 2.5rem;
+                                .Education__icon {
+
+                                }
+                            }
+                            .Education__descr {
+
+                            }
+                        }
+                    }
+                    .Education__content-inner {
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 1rem;
+
+                        .Education__left {
+                            .Education__title-inner {
+                                text-align: center;
+                            }
+                            .Education__descr-inner {
+                                width: 100%;
+                                text-align: center;
+                            }
+                            .Education__btn-wrapper {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                        }
+                        .Education__right {
+                            .Education__photo-wrapper {
+                                .Education__photo {
+
+                                }
+                                .one {
+                                    top: -12%;
+                                    right: 3%;
+                                    display: none;
+                                }
+                                .two {
+                                    display: none;
+                                }
+                                .three {
+                                    width: 280px;
+                                    height: 220px;
+                                    top: 38%;
+                                    right: -7%;
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .Education__blur-bottom {
+            height: 40px;
+        }
+    }
 }

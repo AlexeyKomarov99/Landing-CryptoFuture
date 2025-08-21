@@ -1,4 +1,6 @@
 @import '../../App.css';
+
+/* Адаптация для экранов выше 1920px */
 .Footer {
     position: relative;
     background-image: url('../../assets/background/education.png');
@@ -37,7 +39,19 @@
                 }
 
                 .Footer__btn-support {
+                    position: relative;
+                    z-index: 50;
                     margin-bottom: 7.5rem;
+                    box-shadow: -4px -4px 5px 0px rgba(50, 4, 73, 1) inset;
+                }
+
+                .Footer__btn-support::after {
+                    content: '';
+                    position: absolute;
+                    z-index: 60;
+                    inset: 0;
+                    border-radius: var(--border-radius-hard);
+                    box-shadow: 4px 4px 11px 0px rgba(255, 255, 255, 0.35) inset;
                 }
 
                 .Footer__content-body {
@@ -53,7 +67,8 @@
                     .Footer__photo-wrapper {
                         margin-bottom: 1.5rem;
                         .Footer__photo {
-
+                            width: 285px;
+                            height: 329px;
                         }
                     }
                     .Footer__girl-name {
@@ -104,6 +119,420 @@
     inset: 0;
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: rgba(0, 0, 0, 0.25);
     z-index: 10;
+}
+
+/* Адаптация для экранов от 1440px до 1920px */
+@media (max-width: 1920px) {
+    .Footer {
+        .Footer__blur-top {
+            
+        }
+        .Footer__wrapper {
+            width: 90%;
+            .Footer__container {
+                padding: 4rem 4.125rem;
+                .Footer__content {
+
+                    .Footer__title {
+
+                    }
+                    .Footer__btn-support {
+                        margin-bottom: 4.5rem;
+                    }
+                    .Footer__content-body {
+                        margin-bottom: 3rem;
+                        .Footer__title-two {
+
+                        }
+                        .Footer__photo-wrapper {
+                            .Footer__photo {
+
+                            }
+                        }
+                        .Footer__girl-name {
+
+                        }
+                        .Footer__phone {
+
+                        }
+                    }
+                    .Footer__content-bottom {
+                        .Footer__label-group {
+                            margin-bottom: 2rem;
+                            .Footer__label-icon {
+    
+                            }
+                        }
+                        .Footer__privacy-policy {
+                            margin-bottom: 0.5rem;
+                        }
+                        .Footer__offer-agreement {
+    
+                        }
+                    }
+                }
+            }
+        }
+        .Footer__blur-bottom {
+
+        }
+    }
+}
+
+/* Адаптация для экранов от 1366px до 1440px */
+@media (max-width: 1440px) {
+    .Footer {
+        .Footer__blur-top {
+        }
+        .Footer__wrapper {
+            width: 90%;
+            .Footer__container {
+                padding: 4rem 4.125rem;
+                .Footer__content {
+                    
+                    .Footer__title {
+
+                    }
+                    .Footer__btn-support {
+                        margin-bottom: 3.5rem;
+                    }
+                    .Footer__content-body {
+                        margin-bottom: 3rem;
+                        .Footer__title-two {
+                            margin-bottom: 1.5rem;
+                        }
+                        .Footer__photo-wrapper {
+                            margin-bottom: 1.25rem;
+                            .Footer__photo {
+
+                            }
+                        }
+                        .Footer__girl-name {
+
+                        }
+                        .Footer__phone {
+
+                        }
+                    }
+                    .Footer__content-bottom {
+                        .Footer__label-group {
+                            margin-bottom: 2rem;
+                            .Footer__label-icon {
+    
+                            }
+                        }
+                        .Footer__privacy-policy {
+                            margin-bottom: 0.5rem;
+                        }
+                        .Footer__offer-agreement {
+    
+                        }
+                    }
+                }
+            }
+        }
+        .Footer__blur-bottom {
+
+        }
+    }
+}
+
+/* Адаптация для экранов от 1280px до 1366px */
+@media (max-width: 1366px) {
+    .Footer {
+        .Footer__blur-top {
+            
+        }
+        .Footer__wrapper {
+            width: 90%;
+            .Footer__container {
+                padding: 3.5rem 3.25rem;
+                .Footer__content {
+                    
+                    .Footer__title {
+
+                    }
+                    .Footer__btn-support {
+                        margin-bottom: 3.5rem;
+                    }
+                    .Footer__content-body {
+                        margin-bottom: 2.5rem;
+                        .Footer__title-two {
+                            margin-bottom: 1rem;
+                        }
+                        .Footer__photo-wrapper {
+                            margin-bottom: 1rem;
+                            .Footer__photo {
+
+                            }
+                        }
+                        .Footer__girl-name {
+                            margin-bottom: 0.25rem;
+                        }
+                        .Footer__phone {
+
+                        }
+                    }
+                    .Footer__content-bottom {
+                        .Footer__label-group {
+                            margin-bottom: 2rem;
+                            .Footer__label-icon {
+    
+                            }
+                        }
+                        .Footer__privacy-policy {
+                            margin-bottom: 0.5rem;
+                        }
+                        .Footer__offer-agreement {
+    
+                        }
+                    }
+                }
+            }
+        }
+        .Footer__blur-bottom {
+
+        }
+    }
+}
+
+/* Адаптация для экранов от 1024px до 1280px */
+@media (max-width: 1280px) {
+    .Footer {
+        .Footer__blur-top {
+        }
+        .Footer__wrapper {
+            width: 95%;
+            .Footer__container {
+                padding: 3rem 3.25rem;
+                .Footer__content {
+                    
+                    .Footer__title {
+                        margin-bottom: 1.5rem;
+                    }
+                    .Footer__btn-support {
+                        margin-bottom: 3rem;
+                    }
+                    .Footer__content-body {
+                        margin-bottom: 2.5rem;
+                        .Footer__title-two {
+                            margin-bottom: 1rem;
+                        }
+                        .Footer__photo-wrapper {
+                            margin-bottom: 1rem;
+                            .Footer__photo {
+
+                            }
+                        }
+                        .Footer__girl-name {
+                            margin-bottom: 0.25rem;
+                        }
+                        .Footer__phone {
+
+                        }
+                    }
+                    .Footer__content-bottom {
+                        .Footer__label-group {
+                            margin-bottom: 2rem;
+                            .Footer__label-icon {
+    
+                            }
+                        }
+                        .Footer__privacy-policy {
+                            margin-bottom: 0.5rem;
+                        }
+                        .Footer__offer-agreement {
+    
+                        }
+                    }
+                }
+            }
+        }
+        .Footer__blur-bottom {
+
+        }
+    }
+}
+
+//===== mobile =====//
+/* Адаптация для экранов от 768px до 1024px */
+@media (max-width: 1024px) {
+    .Footer {
+        .Footer__blur-top {
+        }
+        .Footer__wrapper {
+            width: 100%;
+            padding: 0 1rem;
+            .Footer__container {
+                padding: 2rem 3rem;
+                .Footer__content {
+                    
+                    .Footer__title {
+                        margin-bottom: 1.5rem;
+                    }
+                    .Footer__btn-support {
+                        margin-bottom: 3rem;
+                    }
+                    .Footer__content-body {
+                        margin-bottom: 2rem;
+                        .Footer__title-two {
+                            margin-bottom: 1rem;
+                        }
+                        .Footer__photo-wrapper {
+                            margin-bottom: 1rem;
+                            .Footer__photo {
+                                width: 250px;
+                                height: 280px;
+                            }
+                        }
+                        .Footer__girl-name {
+                            margin-bottom: 0.25rem;
+                        }
+                        .Footer__phone {
+
+                        }
+                    }
+                    .Footer__content-bottom {
+                        .Footer__label-group {
+                            margin-bottom: 1rem;
+                            .Footer__label-icon {
+    
+                            }
+                        }
+                        .Footer__privacy-policy {
+                            margin-bottom: 0.5rem;
+                        }
+                        .Footer__offer-agreement {
+    
+                        }
+                    }
+                }
+            }
+        }
+        .Footer__blur-bottom {
+
+        }
+    }
+}
+
+/* Адаптация для экранов от 576px до 768px */
+@media (max-width: 768px) {
+    .Footer {
+        .Footer__blur-top {
+        }
+        .Footer__wrapper {
+            width: 100%;
+            padding: 0 1rem;
+            .Footer__container {
+                padding: 1.75rem 3rem;
+                .Footer__content {
+                    
+                    .Footer__title {
+                        margin-bottom: 1.5rem;
+                    }
+                    .Footer__btn-support {
+                        margin-bottom: 2rem;
+                    }
+                    .Footer__content-body {
+                        margin-bottom: 1.5rem;
+                        .Footer__title-two {
+                            margin-bottom: 1rem;
+                        }
+                        .Footer__photo-wrapper {
+                            margin-bottom: 1rem;
+                            .Footer__photo {
+                                width: 220px;
+                                height: 240px;
+                            }
+                        }
+                        .Footer__girl-name {
+                            margin-bottom: 0.25rem;
+                        }
+                        .Footer__phone {
+
+                        }
+                    }
+                    .Footer__content-bottom {
+                        .Footer__label-group {
+                            margin-bottom: 1rem;
+                            .Footer__label-icon {
+    
+                            }
+                        }
+                        .Footer__privacy-policy {
+                            margin-bottom: 0.5rem;
+                        }
+                        .Footer__offer-agreement {
+    
+                        }
+                    }
+                }
+            }
+        }
+        .Footer__blur-bottom {
+
+        }
+    }
+}
+
+/* Адаптация для экранов от 320px до 576px */
+@media (max-width: 576px) {
+    .Footer {
+        .Footer__blur-top {
+        }
+        .Footer__wrapper {
+            width: 100%;
+            padding: 0 1rem;
+            .Footer__container {
+                padding: 1.75rem 2rem;
+                .Footer__content {
+                    .Footer__title {
+                        margin-bottom: 1rem;
+                    }
+                    .Footer__btn-support {
+                        margin-bottom: 1.5rem;
+                    }
+                    .Footer__content-body {
+                        margin-bottom: 1.5rem;
+                        .Footer__title-two {
+                            text-align: center;
+                            margin-bottom: 1rem;
+                        }
+                        .Footer__photo-wrapper {
+                            margin-bottom: 1rem;
+                            .Footer__photo {
+                                width: 200px;
+                                height: 210px;
+                            }
+                        }
+                        .Footer__girl-name {
+                            margin-bottom: 0.25rem;
+                        }
+                        .Footer__phone {
+
+                        }
+                    }
+                    .Footer__content-bottom {
+                        .Footer__label-group {
+                            margin-bottom: 1rem;
+                            .Footer__label-icon {
+    
+                            }
+                        }
+                        .Footer__privacy-policy {
+                            margin-bottom: 0.5rem;
+                        }
+                        .Footer__offer-agreement {
+    
+                        }
+                    }
+                }
+            }
+        }
+        .Footer__blur-bottom {
+
+        }
+    }
 }
