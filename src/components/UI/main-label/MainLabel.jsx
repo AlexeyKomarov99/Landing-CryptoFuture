@@ -1,7 +1,7 @@
 import React from 'react';
 //===== assets =====//
 import './MainLabel.scss';
-import Label from '../../assets/icons/banner/main-label.svg';
+import Label from '../../../assets/icons/banner/main-label.svg';
 import { nameOne, nameTwo } from './data';
 
 const MainLabel = () => {

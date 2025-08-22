@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+# Crypto Future: Ретродропы - Landing Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Баннер сайта](/public/images/screenshots/banner.png)
 
-## Available Scripts
+## 💼 О проекте
+Современный и адаптивный сайт-визитка, посвященный миру **криптовалютных ретродропов**
 
-In the project directory, you can run:
+## 🎯 Цель проекта
+Этот сайт-визитка был создан как демонстрация профессиональных навыков в разработке на **React**. Тема **криптовалютных ретродропов** была выбрана для погружения в уникальную нишу на стыке цифровой истории, коллекционирования и блокчейн-технологий.
 
-### `npm start`
+**Ключевые цели:**
+* Разработать <u>**полностью адаптивный**</u> интерфейс, корректно отображающийся на всех устройствах.
+* Обеспечить <u>**кроссбраузерную совместимость**</u> для широкого охвата аудитории.
+* Создать интуитивно понятный и визуально привлекательный сайт с использованием <u>**актуального стека технологий**</u>.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✨ Особенности
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+*   **📱 Адаптивный дизайн:** Идеальное отображение на мониторах, планшетах и смартфонах.
+*   **🌐 Кроссбраузерность:** Сайт корректно работает в современных версиях Chrome, Firefox, Safari и Edge.
+*   **🎨 Стилизация на SASS/SCSS:** Использование переменных, миксинов и вложенностей для чистого и мощного CSS.
+*   **⚡ Современный React 19:** Функциональные компоненты и хуки для управления состоянием и логикой.
+*   **🚀 Интерактивные элементы:** Плавные анимации и переходы, улучшающие пользовательский опыт.
 
-### `npm test`
+## 🛠 Технологический стек
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| Технология | Бейдж | Описание |
+| :--- | :--- | :--- |
+| **HTML** | [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/ru/docs/Web/HTML) | Структура и семантика веб-страниц |
+| **CSS / SASS** | [![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)](https://sass-lang.com/) | Стилизация и препроцессинг |
+| **JavaScript** | [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/ru/docs/Web/JavaScript) | Логика и интерактивность |
+| **React** | [![React](https://img.shields.io/badge/React-19.x-61dafb?logo=react&style=for-the-badge)](https://react.dev/) | Библиотека для построения пользовательских интерфейсов |
 
-### `npm run build`
+## ⚙️ Структура Landing Page
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+public/
+├── fonts/                   # Шрифты
+├── images/                  # Изображения и иконки для public/index.html
+└── index.html               # Корневой HTML-файл
+src/
+├── assets/                  # Статические ресурсы для компонентов
+│   ├── background/          # Фоновые изображения
+│   ├── icons/               # Иконки (SVG, PNG)
+│   └── photos/              # Фотографии для контента
+├── components/              # React-компоненты
+│   ├── UI/                  # Переиспользуемые UI-компоненты
+│   │   ├── button-cta/      # Компонент "Кнопка CTA"
+│   │   └── main-label/      # Компонент "Главная метка"
+│   ├── banner/              # Главный компонент лендинга (Hero section)
+│   ├── darts/               # Компонент с Дартс
+│   ├── education/           # Компонент "Образование"
+│   ├── education-fee/       # Компонент "Тарифы обучения"
+│   ├── education-program/   # Компонент "Программа обучения"
+│   ├── education-system/    # Компонент "Система обучения"
+│   ├── footer/              # Компонент "Подвал"
+│   ├── personal-cases/      # Компонент "Личные кейсы"
+│   └── questions/           # Компонент "Вопросы и ответы"
+├── App.css                  # Глобальные стили
+├── App.js                   # Корневой компонент приложения
+└── index.js                 # Точка входа в приложение
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Как запустить проект
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Этот проект создан с помощью `Create React App`. Чтобы запустить его локально на вашем компьютере, выполните следующие шаги:
 
-### `npm run eject`
+### Предварительные требования
+Убедитесь, что на вашем компьютере установлен Node.js (версия 18 или выше) и npm.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Пошаговая инструкция
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1.  **Клонируйте репозиторий:**
+    ```bash
+    git clone https://github.com/AlexeyKomarov99/Landing-CryptoFuture.git
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2.  **Перейдите в директорию проекта:**
+    ```bash
+    cd your-repo-name
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3.  ️**Установите зависимости:**
+    ```bash
+    npm install
+    ```
 
-## Learn More
+4.  **Запустите сервер для разработки:**
+    ```bash
+    npm start
+    ```
+    После выполнения этой команды запустится development-сервер.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5.  **Откройте в браузере:**
+    Перейдите по адресу [http://localhost:3000](http://localhost:3000), чтобы просмотреть сайт. Страница автоматически откроется в браузере.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+### Другие полезные команды
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| Команда | Описание |
+| :--- | :--- |
+| `npm run build` | Создает оптимизированную production-сборку в папке `dist` или `build`. |
+| `npm run preview` | Локально предпросматривает production-сборку. |
+| `npm run lint` | Запускает линтер для проверки кода. |

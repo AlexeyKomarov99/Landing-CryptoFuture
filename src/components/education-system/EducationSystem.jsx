@@ -3,7 +3,7 @@ import React from 'react';
 import './EducationSystem.scss';
 import { row1, row2, row3 } from './data';
 //===== components =====//
-import ButtonCta from '../button-cta/ButtonCta';
+import ButtonCta from '../UI/button-cta/ButtonCta';
 
 const EducationSystem = () => {
   return (

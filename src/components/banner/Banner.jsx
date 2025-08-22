@@ -6,8 +6,8 @@ import {ReactComponent as CalendarIcon} from '../../assets/icons/banner/calendar
 import {ReactComponent as WatchIcon} from '../../assets/icons/banner/watch.svg';
 
 //===== components =====//
-import ButtonCta from '../button-cta/ButtonCta';
-import MainLabel from '../main-label/MainLabel';
+import ButtonCta from '../UI/button-cta/ButtonCta';
+import MainLabel from '../UI/main-label/MainLabel';
 
 const educationData = [
   {id: 1, icon: <CalendarIcon />, title: 'Старт потока', descr: '1 июня'},

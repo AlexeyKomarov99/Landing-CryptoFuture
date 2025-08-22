@@ -2,7 +2,7 @@ import React from 'react';
 //===== assets =====//
 import './Footer.scss';
 import GirlPhoto from '../../assets/photos/footer/girl.png';
-import MainLabel from '../main-label/MainLabel';
+import MainLabel from '../UI/main-label/MainLabel';
 
 const Footer = () => {
   return (

@@ -6,7 +6,7 @@ import MoneyOne from '../../assets/photos/money/money-one.png';
 import MoneyTwo from '../../assets/photos/money/money-two.png';
 import MoneyThree from '../../assets/photos/money/money-three.png';
 //===== components =====//
-import ButtonCta from '../button-cta/ButtonCta';
+import ButtonCta from '../UI/button-cta/ButtonCta';
 
 const eduContent = [
   {id: 1, icon: <CheckMarkIcon className="Education__icon" />, descr: <span className='Education__descr'><span className='span-bold'>Не нужны знания</span> в инвестициях и криптовалюте, чтобы начать</span>},

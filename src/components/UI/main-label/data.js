@@ -1,12 +1,12 @@
-import { ReactComponent as C } from '../../assets/icons/banner/label-symbols/С.svg';
-import { ReactComponent as R } from '../../assets/icons/banner/label-symbols/R.svg';
-import { ReactComponent as Y } from '../../assets/icons/banner/label-symbols/Y.svg';
-import { ReactComponent as P } from '../../assets/icons/banner/label-symbols/P.svg';
-import { ReactComponent as T } from '../../assets/icons/banner/label-symbols/T.svg';
-import { ReactComponent as O } from '../../assets/icons/banner/label-symbols/O.svg';
-import { ReactComponent as F } from '../../assets/icons/banner/label-symbols/F.svg';
-import { ReactComponent as U } from '../../assets/icons/banner/label-symbols/U.svg';
-import { ReactComponent as E } from '../../assets/icons/banner/label-symbols/E.svg';
+import { ReactComponent as C } from '../../../assets/icons/banner/label-symbols/С.svg';
+import { ReactComponent as R } from '../../../assets/icons/banner/label-symbols/R.svg';
+import { ReactComponent as Y } from '../../../assets/icons/banner/label-symbols/Y.svg';
+import { ReactComponent as P } from '../../../assets/icons/banner/label-symbols/P.svg';
+import { ReactComponent as T } from '../../../assets/icons/banner/label-symbols/T.svg';
+import { ReactComponent as O } from '../../../assets/icons/banner/label-symbols/O.svg';
+import { ReactComponent as F } from '../../../assets/icons/banner/label-symbols/F.svg';
+import { ReactComponent as U } from '../../../assets/icons/banner/label-symbols/U.svg';
+import { ReactComponent as E } from '../../../assets/icons/banner/label-symbols/E.svg';
 
 export const nameOne = [
     {id: 11, symbol: <C className='MainLabel__symbol-item' />},
